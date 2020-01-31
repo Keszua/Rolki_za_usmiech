@@ -1,0 +1,17 @@
+header {
+    flex-basis: 30vh;
+    position: relative;
+    overflow: hidden;   //wytnij wszsytko co wychodzi po za ramkę
+
+    img {
+        position: absolute;
+        //te trzy, aby wyśrodkować
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        //aby rozciągnąć, (aby nie było pustych przestrzeni)
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+}

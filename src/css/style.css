@@ -25,11 +25,6 @@ div.app {
   color: #222;
 }
 
-header {
-  -ms-flex-preferred-size: 30vh;
-      flex-basis: 30vh;
-}
-
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,5 +171,22 @@ a:hover {
 
 .navigation li:nth-child(4) a.active {
   border-left-color: red;
+}
+
+header {
+  -ms-flex-preferred-size: 30vh;
+      flex-basis: 30vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
