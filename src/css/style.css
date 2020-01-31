@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,51 +6,175 @@
           box-sizing: border-box;
 }
 
-nav {
-  background-color: #000;
+html {
+  font-family: 'Arial';
 }
 
-ul {
+div.app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ddd;
+  color: #222;
 }
 
-li {
+header {
+  -ms-flex-preferred-size: 30vh;
+      flex-basis: 30vh;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 30px 0;
+}
+
+main aside {
+  min-width: 240px;
+}
+
+main section.page {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-a {
-  display: block;
-  font-family: arial;
-  padding: 15px 25px;
-  text-align: center;
+footer {
+  background-color: #000;
   color: white;
+  padding: 10px 0;
+  text-align: center;
   text-transform: uppercase;
-  border-bottom: 4px solid black;
 }
+
+/*
+
+  a {
+    display: block;
+    font-family: arial;
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+  }
+  
 
 a:hover {
-  color: yellow;
-}
-
-section {
-  padding-top: 30px;
+    color: yellow;
+  }
+  
+  section {
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+  .home-selected {
+    border-bottom-color: yellow;
+  }
+  
+  .news-selected {
+    border-bottom-color: green;
+  }
+  
+  .contact-selected {
+    border-bottom-color: blue;
+  }
+  */
+/* Domyślne ustawienia:
+.App {
   text-align: center;
 }
 
-.home-selected {
-  border-bottom-color: yellow;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.news-selected {
-  border-bottom-color: green;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.contact-selected {
-  border-bottom-color: blue;
+.App-header {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+.navigation {
+  padding: 0 30px 30px 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navigation a:hover {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.navigation a.active {
+  border-left: 10px gray solid;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.navigation li:nth-child(1) a.active {
+  border-left-color: green;
+}
+
+.navigation li:nth-child(2) a.active {
+  border-left-color: blue;
+}
+
+.navigation li:nth-child(3) a.active {
+  border-left-color: orange;
+}
+
+.navigation li:nth-child(4) a.active {
+  border-left-color: red;
 }
 /*# sourceMappingURL=style.css.map */

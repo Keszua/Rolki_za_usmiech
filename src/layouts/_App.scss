@@ -1,0 +1,123 @@
+
+
+div.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; //minimalnie ma zajmować wielkośc strony (może zajmowac mniej)
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ddd;
+  color: #222;
+}
+
+ header {
+   flex-basis: 30vh;
+   //background-color: #000;
+   //color: white;
+ }
+
+
+main {
+  display: flex;
+  flex-grow: 1; //aby zajac cala wolna przestrzen
+  padding: 30px 0;
+  //background-color: #300;
+
+  aside {
+    min-width: 240px;
+    //background-color: yellow;
+  }
+
+  section.page {
+    flex-grow: 1; 
+    //background-color: yellowgreen;
+  }
+
+}
+
+
+footer {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*
+
+  a {
+    display: block;
+    font-family: arial;
+    padding: 15px 25px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+  }
+  
+
+a:hover {
+    color: yellow;
+  }
+  
+  section {
+    padding-top: 30px;
+    text-align: center;
+  }
+  
+  .home-selected {
+    border-bottom-color: yellow;
+  }
+  
+  .news-selected {
+    border-bottom-color: green;
+  }
+  
+  .contact-selected {
+    border-bottom-color: blue;
+  }
+  */
+
+
+
+/* Domyślne ustawienia:
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
