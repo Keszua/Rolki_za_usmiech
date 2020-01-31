@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Link, NavLink, Route, Switch } from 'react-router-dom';
 
-
 const Home = () => <h1>Strona startowa</h1>
 const News = () => <h1>Aktualności</h1>
 const Contact = () => <h1>Kontakt</h1>
