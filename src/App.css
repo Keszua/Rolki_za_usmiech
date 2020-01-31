@@ -35,6 +35,20 @@ section {
   padding-top: 30px;
   text-align: center;
 }
+
+.home-selected {
+  border-bottom-color: yellow;
+}
+
+.news-selected {
+  border-bottom-color: green;
+}
+
+.contact-selected {
+  border-bottom-color: blue;
+}
+
+
 /* Domyślne ustawienia:
 .App {
   text-align: center;

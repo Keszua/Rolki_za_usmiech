@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink, Route } from 'react-router-dom';
 
 
 const Home = () => <h1>Strona startowa</h1>
@@ -14,9 +14,14 @@ function App() {
         <header className="App-header">
         <nav>
           <ul>
-            <li><Link to="/">Start</Link> </li>
-            <li><Link to="/news">Aktualnosci</Link> </li>
-            <li><Link to="/contact">Kontakt</Link> </li>
+            <li><NavLink to="/" exact activeClassName="home-selected"
+                  activeStyle={{  //możliwość stylowania aktywnego elementu
+                    backgroundColor: 'gray',
+                    letterSpacing: '3px'
+                  }}
+                >Start</NavLink> </li>
+            <li><NavLink to="/news" activeClassName="news-selected">Aktualnosci</NavLink> </li>
+            <li><NavLink to="/contact" activeClassName="contact-selected">Kontakt</NavLink> </li>
           </ul>
         </nav>
         </header>
