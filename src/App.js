@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Link, NavLink, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink, Route, Switch } from 'react-router-dom';
 
 
 const Home = () => <h1>Strona startowa</h1>
 const News = () => <h1>Aktualności</h1>
 const Contact = () => <h1>Kontakt</h1>
+const ErrorPage = () => <h1>Strona nie istnieje (error: 404)</h1>
+
 
 function App() {
   return (
@@ -27,9 +29,12 @@ function App() {
         </header>
 
         <section>
-          <Route path="/" exact component={Home}/>
-          <Route path="/news" component={News}/>
-          <Route path="/contact" component={Contact}/>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/news" component={News}/>
+            <Route path="/contact" component={Contact}/>
+            <Route component={ErrorPage}/>
+          </Switch>
         </section>
 
       </div>
