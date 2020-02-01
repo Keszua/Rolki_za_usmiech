@@ -10,7 +10,7 @@ const articles = [
     },
     {
         id: 2,
-        title: "Artykół 2",
+        title: "Artykuł 2",
         author: "Jan Nowak",
         text: "Bala bala, jakiś tekst"
     },

@@ -10,7 +10,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
         <header className="App-header">
           {<Header/>}
@@ -24,7 +24,7 @@ function App() {
             <Page/>
           </section>
         </main>
-        
+
         <footer> {<Footer/>} </footer>
       </div>
     </Router>
