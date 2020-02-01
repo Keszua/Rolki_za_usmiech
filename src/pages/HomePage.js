@@ -20,6 +20,42 @@ const articles = [
         author: "Jan Malinowski",
         text: "Bala bala, jakiś tekst"
     },
+    {
+        id: 4,
+        title: "Czym jest teoria strun",
+        author: "Jan Kowalski",
+        text: "Bala bala, jakiś tekst"
+    },
+    {
+        id: 5,
+        title: "Artykuł 2",
+        author: "Jan Nowak",
+        text: "Bala bala, jakiś tekst"
+    },
+    {
+        id: 6,
+        title: "Zapraszamy na fajny festyn",
+        author: "Jan Malinowski",
+        text: "Bala bala, jakiś tekst"
+    },
+    {
+        id: 7,
+        title: "Czym jest teoria strun",
+        author: "Jan Kowalski",
+        text: "Bala bala, jakiś tekst"
+    },
+    {
+        id: 8,
+        title: "Artykuł 2",
+        author: "Jan Nowak",
+        text: "Bala bala, jakiś tekst"
+    },
+    {
+        id: 9,
+        title: "Zapraszamy na fajny festyn",
+        author: "Jan Malinowski",
+        text: "Bala bala, jakiś tekst"
+    },
 
 ]
 

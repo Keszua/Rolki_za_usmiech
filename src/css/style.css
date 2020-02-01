@@ -10,66 +10,51 @@ html {
   font-family: 'Arial';
 }
 
-div.app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #ddd;
-  color: #222;
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px              1fr                200px;
+      grid-template-columns: 200px              1fr                200px;
+  -ms-grid-rows: 200px minmax(1em, 70vh) auto;
+      grid-template-rows: 200px minmax(1em, 70vh) auto;
+      grid-template-areas: "header	  header 	  header" "menuL	  _page     menuR" "footer		footer		footer";
+  min-height: 100%;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding: 30px 0;
+.main__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
 }
 
-main aside {
-  min-width: 240px;
+.main__asideLeft {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menuL;
 }
 
-main section.page {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.main__asideRight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: menuR;
 }
 
-footer {
-  background-color: #000;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
+.main__page {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: _page;
+}
+
+.main__footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
 }
 
 /*
 
-  a {
-    display: block;
-    font-family: arial;
-    padding: 15px 25px;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    border-bottom: 4px solid black;
-  }
-  
-
-a:hover {
-    color: yellow;
-  }
-  
   section {
     padding-top: 30px;
     text-align: center;
@@ -127,6 +112,7 @@ a:hover {
   }
 }
 */
+/* Plik Navigation.js */
 .navigation {
   padding: 0 30px 30px 0;
 }
@@ -173,9 +159,8 @@ a:hover {
   border-left-color: red;
 }
 
+/* Plik Header.js */
 header {
-  -ms-flex-preferred-size: 30vh;
-      flex-basis: 30vh;
   position: relative;
   overflow: hidden;
 }
@@ -190,6 +175,7 @@ header img {
   min-height: 100%;
 }
 
+/* plik _ContactPage.scss */
 .contact textarea {
   font-size: 16px;
   width: 80%;
@@ -217,6 +203,7 @@ header img {
   background-color: black;
 }
 
+/* plik _ProductListPage.scss */
 .products h2 {
   margin-bottom: 20px;
 }
@@ -238,6 +225,15 @@ header img {
 .products a:hover {
   text-decoration: underline;
   color: black;
+}
+
+/* Plik Fotter.js */
+footer {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 footer span {
