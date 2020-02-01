@@ -121,24 +121,32 @@ html {
   list-style-type: none;
 }
 
+.navigation .nav-link img {
+  position: relative;
+  display: block;
+  height: 150px;
+}
+
 .navigation a {
   display: block;
+  width: 150px;
+  height: 150px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-weight: bold;
   padding: 10px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 .navigation a:hover {
-  -webkit-transform: translateX(20px);
-          transform: translateX(20px);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-color: green;
 }
 
 .navigation a.active {
-  border-left: 10px gray solid;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
 }
