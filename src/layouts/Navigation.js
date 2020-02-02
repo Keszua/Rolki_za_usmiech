@@ -26,13 +26,13 @@ const list = [
     {name: "start",             img: img_st, dir: "right", path: "/", exact: true},
     {name: "Nauka jazdy",       img: img_na, dir: "right", path: "/nauka"},
     {name: "Warsztaty rolkowe", img: img_wa, dir: "right", path: "/warsztaty"},
-    {name: "Zbiórka rolek",     img: img_zb,   dir: "right", path: "/zbiorka"},
-    {name: "Pielgrzymka",       img: img_pi,   dir: "right", path: "/pielgrzymka"},
-    //{name: "Gra miejska",     img: img1, dir: "right", path: "/gra"},
-    //{name: "Rajdy",           img: img1, dir: "right", path: "/rajd"},
-    {name: "Mapa rolkowa",      img: img_ma,   dir: "right", path: "/map"},
-    {name: "Kontakt",           img: img_ko,   dir: "right", path: "/contact"},
-    {name: "Panel admina",      img: img_pa,   dir: "right", path: "/admin"},
+    {name: "Zbiórka rolek",     img: img_zb, dir: "right", path: "/zbiorka"},
+    {name: "Pielgrzymka",       img: img_pi, dir: "right", path: "/pielgrzymka"},
+    //{name: "Gra miejska",       img: img_gr, dir: "right", path: "/gra"},
+    //{name: "Rajdy",             img: img_ra, dir: "right", path: "/rajd"},
+    {name: "Mapa rolkowa",      img: img_ma, dir: "right", path: "/map"},
+    {name: "Kontakt",           img: img_ko, dir: "right", path: "/contact"},
+    {name: "Panel admina",      img: img_pa, dir: "right", path: "/admin"},
 ]
 
 const Navigation = (props) => {
