@@ -8,33 +8,33 @@ class Animated2 extends Component {
     }
 
     componentDidMount() {
-        document.addEventListener('scroll', (event) => this.setNewPosition(event));
+        document.addEventListener('scroll', () => this.setNewPosition());
     }
 
     componentWillUnmount()  { //Gdy będzie się odmontowywał
-        document.removeEventListener('scroll', (event) => this.setNewPosition(event));
+        document.removeEventListener('scroll', () => this.setNewPosition());
     }
 
-    setNewPosition(event) {
-        //console.log(event);
-        //const { clientX, clientY } = event;
-        const rot = window.pageYOffset;
+    setNewPosition() {
+        const rotation = window.pageYOffset;
 
         this.setState({
-            rotation: rot,
+            rotation,
         })
     }
 
     render() {
         const { className, src } = this.props;
 
+        let rot = this.state.rotation /2;
+        if(this.props.direction === "left") rot = -rot;
+
         return (
             <img 
             className={className}
             src={src}
             style={{
-                //transform: `translate(${posX}px, ${posY}px)`,
-                transform: `rotate(${this.state.rotation}deg)`,
+                transform: `rotate(${rot}deg)`,
             }}
             alt="" />
         )

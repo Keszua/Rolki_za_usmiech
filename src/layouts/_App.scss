@@ -12,7 +12,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 200px              1fr                200px;
+  grid-template-columns: $nav-whel-size              1fr                $nav-whel-size;
   //grid-template-rows:    minmax(200px, 30vh) minmax(10vh, 70vh) auto;
   grid-template-rows:    200px minmax(1em, 70vh) auto;
   grid-template-areas: 
@@ -50,26 +50,6 @@
 
 }
 
-
-/*
-
-  section {
-    padding-top: 30px;
-    text-align: center;
-  }
-  
-  .home-selected {
-    border-bottom-color: yellow;
-  }
-  
-  .news-selected {
-    border-bottom-color: green;
-  }
-  
-  .contact-selected {
-    border-bottom-color: blue;
-  }
-  */
 
 
 
