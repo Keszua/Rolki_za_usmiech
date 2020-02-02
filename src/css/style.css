@@ -15,9 +15,9 @@ html {
   display: grid;
   -ms-grid-columns: 150px 1fr 150px;
       grid-template-columns: 150px 1fr 150px;
-  -ms-grid-rows: 200px minmax(1em, 70vh) auto;
-      grid-template-rows: 200px minmax(1em, 70vh) auto;
-      grid-template-areas: "header	  header 	  header" "menuL	  _page     menuR" "footer		footer		footer";
+  -ms-grid-rows: 200px minmax(150vh, 1fr) auto;
+      grid-template-rows: 200px minmax(150vh, 1fr) auto;
+      grid-template-areas: "header	  header 	  header" "menuL	  _page     menuR" ".		    footer		.";
   min-height: 100%;
 }
 
@@ -48,8 +48,7 @@ html {
 
 .main__footer {
   -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 2;
   grid-area: footer;
 }
 

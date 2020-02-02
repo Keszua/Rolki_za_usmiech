@@ -1,29 +1,52 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import '../css/style.css';
 import { NavLink } from 'react-router-dom';
-import Animated1 from '../components/Animated-mouse-mow';
-import Animated2 from '../components/Animated-pageYOffset';
+import Animated1 from '../components/Anim-mouse-mow';
+import Animated2 from '../components/Anim-pageYOffset';
+import AnimRotateLoop from '../components/Anim-rotate_loop';
+
+import { TweenMax, TimelineMax, Power3 } from 'gsap';
+
 
 //import img1 from '../images/wheel3-640.png';
-import img1 from '../svg/kolo1.svg';
-import img_st from '../svg/kolo-start.svg';
-import img_na from '../svg/kolo-nauka.svg';
-import img_wa from '../svg/kolo-warsztaty.svg';
+import img_1 from '../svg/kolo1.svg';
+import img_st from '../svg/__kolo1-START-01.svg';
+import img_na from '../svg/__kolo1-NAUKA.svg';
+import img_wa from '../svg/__kolo1-WARSZTATY.svg';
+import img_zb from '../svg/__kolo1-ZBIORKA.svg';
+import img_pi from '../svg/__kolo1-PIELGRZYMKA.svg';
+import img_ma from '../svg/__kolo1-MAPA.svg';
+import img_ko from '../svg/__kolo1-KONTAKT.svg';
+import img_pa from '../svg/__kolo1-PANEL.svg';
+
+
+
 
 const list = [
     {name: "start",             img: img_st, dir: "right", path: "/", exact: true},
     {name: "Nauka jazdy",       img: img_na, dir: "right", path: "/nauka"},
     {name: "Warsztaty rolkowe", img: img_wa, dir: "right", path: "/warsztaty"},
-    {name: "Zbiórka rolek",     img: img1,   dir: "right", path: "/zbiorka"},
-    {name: "Pielgrzymka",       img: img1,   dir: "right", path: "/pielgrzymka"},
+    {name: "Zbiórka rolek",     img: img_zb,   dir: "right", path: "/zbiorka"},
+    {name: "Pielgrzymka",       img: img_pi,   dir: "right", path: "/pielgrzymka"},
     //{name: "Gra miejska",     img: img1, dir: "right", path: "/gra"},
     //{name: "Rajdy",           img: img1, dir: "right", path: "/rajd"},
-    {name: "Mapa rolkowa",      img: img1,   dir: "right", path: "/map"},
-    {name: "Kontakt",           img: img1,   dir: "right", path: "/contact"},
-    {name: "Panel admina",      img: img1,   dir: "right", path: "/admin"},
+    {name: "Mapa rolkowa",      img: img_ma,   dir: "right", path: "/map"},
+    {name: "Kontakt",           img: img_ko,   dir: "right", path: "/contact"},
+    {name: "Panel admina",      img: img_pa,   dir: "right", path: "/admin"},
 ]
 
 const Navigation = (props) => {
+
+//-------------------------
+//Poczytać na : https://www.npmjs.com/package/react-gsap
+//Obejżeć https://www.youtube.com/watch?v=_-YfoAzIDzw
+    let logoItem = useRef('hello')
+    // useEffect(() => {
+    //   console.log("LogoItem:",logoItem);
+    //   //logoItem.style.display='none'; //efekt znikniecia 
+    //   TweenMax.to(logoItem, 3, {x:100, ease: Power3.easeOut})
+    // }, [])
+//---------------------------
 
     let listShort = [];
     const LeftMenuCount = 4;
@@ -53,12 +76,21 @@ const Navigation = (props) => {
     ))
 
     return (
-        <>
-            <nav>
-                <ul>
-                    {menu}
-                </ul>
-            </nav>      
+      <>
+
+{/* --------------------------- */}
+        <img 
+          ref={el => {logoItem = el}}
+            //src={img_1}
+        alt="" />
+{/* --------------------------- */}
+
+        <nav>
+          <ul>
+            {menu}
+          </ul>
+        </nav>    
+        <AnimRotateLoop  />
       </>     
   )
 }
