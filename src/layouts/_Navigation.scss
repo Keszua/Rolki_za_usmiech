@@ -32,13 +32,13 @@
         margin:0 auto;
         border-radius: 50%;
         
-        transition: .9s;
+        transition: .6s;
         
     }
     
     a:hover {
         //        transform: translateX(20px);
-        transform: rotate(180deg) ;
+        transform: rotate(90deg) ;
         // background-color: green;
     }
     
@@ -51,9 +51,11 @@
     }
 
     @keyframes pelny-obrot {
-        0% { transform: rotate(0deg); }
-        // 50% { transform: rotate(0deg); }
-        100% { transform: rotate(-360deg); } 
+        0% { transform: rotate(90deg); }
+        25% { transform: rotate(0deg); }
+        50% { transform: rotate(-90deg); }  
+        75% { transform: rotate(-180deg); }  
+        100% { transform: rotate(-270deg); }
     }
 
     // li:nth-child(1) a.active {
