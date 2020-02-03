@@ -11,19 +11,19 @@
     .nav-link {
         
         img{
-            position: relative;
-            display: block;
+            //position: relative;
+            //display: block;
             //width: $nav-whel-size;
             height: $nav-whel-size;
-            
+            // margin-left: -80px;
         }
         
     }
     
     a {
         display: block;
-        //width: $nav-whel-size;
-        //height: $nav-whel-size;
+        width: $nav-whel-size;
+        height: $nav-whel-size;
         text-decoration: none;
         color: black;
         text-transform: uppercase;
@@ -41,10 +41,12 @@
         transform: rotate(90deg) ;
         // background-color: green;
     }
-    
+
+
+
     a.active {
         //border-left: 10px gray solid;
-        transform: translateX(0px);
+        //transform: translateX(0px);
         animation: pelny-obrot 20s linear;
         //animation: pelny-obrot 20s ease-in-out;
         animation-iteration-count: infinite;

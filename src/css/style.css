@@ -13,12 +13,21 @@ html {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 150px 1fr 150px;
-      grid-template-columns: 150px 1fr 150px;
-  -ms-grid-rows: 200px minmax(150vh, 1fr) auto;
-      grid-template-rows: 200px minmax(150vh, 1fr) auto;
-      grid-template-areas: "header	  header 	  header" "menuL	  _page     menuR" ".		    footer		.";
+  -ms-grid-columns: 160px 1fr 160px;
+      grid-template-columns: 160px 1fr 160px;
+  -ms-grid-rows: 200px minmax(130vh, 1fr) auto;
+      grid-template-rows: 200px minmax(130vh, 1fr) auto;
+      grid-template-areas: "header	  header 	  header" "menuL	  page     menuR" ".		    footer		.";
   min-height: 100%;
+  background-color: #a4c747;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    -ms-grid-columns: 80px 1fr 80px;
+        grid-template-columns: 80px 1fr 80px;
+  }
 }
 
 .main__header {
@@ -28,13 +37,19 @@ html {
   grid-area: header;
 }
 
-.main__asideLeft {
+.main__navLeft {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: menuL;
 }
 
-.main__asideRight {
+@media (max-width: 1200px) {
+  .main__navLeft {
+    margin-left: -80px;
+  }
+}
+
+.main__navRight {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: menuR;
@@ -43,7 +58,7 @@ html {
 .main__page {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: _page;
+  grid-area: page;
 }
 
 .main__footer {
@@ -98,13 +113,13 @@ html {
 }
 
 .navigation .nav-link img {
-  position: relative;
-  display: block;
-  height: 150px;
+  height: 160px;
 }
 
 .navigation a {
   display: block;
+  width: 160px;
+  height: 160px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -121,8 +136,6 @@ html {
 }
 
 .navigation a.active {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
   -webkit-animation: pelny-obrot 20s linear;
           animation: pelny-obrot 20s linear;
   -webkit-animation-iteration-count: infinite;
@@ -245,7 +258,7 @@ header img {
 
 /* Plik Fotter.js */
 footer {
-  background-color: #000;
+  background-color: #36b65c;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -253,7 +266,7 @@ footer {
 }
 
 footer span {
-  color: red;
+  color: #124615;
 }
 
 footer p {

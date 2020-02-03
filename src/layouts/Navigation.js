@@ -62,14 +62,14 @@ const Navigation = (props) => {
             {/* <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink>  */}
             <div className="nav-link">
                 <NavLink to={item.path} exact={item.exact} > 
-                    <center>
+                    {/* <center> */}
                     {/* {item.name}  */}
                     <Animated2
                         className="wheel-1"
                         src={item.img}
                         direction={item.dir}
                     />
-                    </center>
+                    {/* </center> */}
                 </NavLink> 
             </div>
         </li>

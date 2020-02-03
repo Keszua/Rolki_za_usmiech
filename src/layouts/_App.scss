@@ -12,32 +12,39 @@
 
 .main {
   display: grid;
+  //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
   grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
-  //grid-template-rows:    minmax(200px, 30vh) minmax(10vh, 70vh) auto;
-  grid-template-rows:    200px           minmax(150vh, 1fr)   auto;
+  @media (max-width: 1200px) {
+    grid-template-columns: $nav-whel-size/2  1fr                $nav-whel-size/2;
+  }
+
+  grid-template-rows:    200px           minmax(130vh, 1fr)   auto;
   grid-template-areas: 
   "header	  header 	  header"
-  "menuL	  _page     menuR"
+  "menuL	  page     menuR"
   ".		    footer		." 
   ;
   min-height: 100%;
+  background-color: $bg-main-color;
+  overflow-x: hidden;  //utnij to co wystaje
 
   &__header { 
     grid-area: header; 
   }
 
-  &__asideLeft { 
+  &__navLeft { 
     grid-area: menuL; 
+    @media (max-width: 1200px) {
+      margin-left: -80px;
+    }
   }
 
-  &__asideRight { 
+  &__navRight { 
     grid-area: menuR; 
   }
 
-
-
   &__page { 
-    grid-area: _page; 
+    grid-area: page; 
     //height: 80vh;
   }
 
