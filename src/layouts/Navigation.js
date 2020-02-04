@@ -55,8 +55,10 @@ class Navigation extends Component {
         listShort = list.slice(LeftMenuCount);
 
     const menu = listShort.map(item => (
-        <li key={item.name}>
-            {/* <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink>  */}
+
+
+
+//            <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink> 
             <div className="nav-link">
                 <NavLink to={item.path} exact={item.exact} > 
                     {/* <center> */}
@@ -69,18 +71,12 @@ class Navigation extends Component {
                     {/* </center> */}
                 </NavLink> 
             </div>
-        </li>
     ))
 
         return ( 
             <>
-                <nav>
-                    
                     {/* <MenuRoundedIcon color="primary"   className={this.props.position==='left' ? "nav-link__left-m-icon" : "nav-link__right-m-icon"} /> */}
-                    <ul>
                         {menu}
-                    </ul>
-                </nav>    
                 <AnimRotateLoop  />
             </>     
         );

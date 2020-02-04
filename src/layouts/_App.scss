@@ -26,11 +26,11 @@
 
   @media (max-width: 800px) { //poniżej 800
     grid-template-columns:  1fr;
-    grid-template-rows:    $nav-whel-size 
-                           $nav-whel-size  
-                           200px                //dla  nagłówka
-                           minmax(130vh, 1fr)   
-                           auto;
+    grid-template-rows:   calc(100vw / 4)
+                          calc(100vw / 4)  
+                          200px                //dla  nagłówka
+                          minmax(130vh, 1fr)   
+                          auto;
     
     grid-template-areas: 
     "menuL"
@@ -51,7 +51,7 @@
 
   &__navLeft { 
     grid-area: menuL; 
-    @media (max-width: 1200px) {
+    @media (min-width: 800px) and (max-width: 1200px)  {
       margin-left: -80px;
     }
   }

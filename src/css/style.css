@@ -34,8 +34,8 @@ html {
   .main {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 160px 160px 200px minmax(130vh, 1fr) auto;
-        grid-template-rows: 160px 160px 200px minmax(130vh, 1fr) auto;
+    -ms-grid-rows: calc(100vw / 4) calc(100vw / 4) 200px minmax(130vh, 1fr) auto;
+        grid-template-rows: calc(100vw / 4) calc(100vw / 4) 200px minmax(130vh, 1fr) auto;
         grid-template-areas: "menuL" "menuR" "header" "page  "    "footer";
   }
 }
@@ -53,7 +53,7 @@ html {
   grid-area: menuL;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 800px) and (max-width: 1200px) {
   .main__navLeft {
     margin-left: -80px;
   }
@@ -118,15 +118,7 @@ html {
 }
 */
 /* Plik Navigation.js */
-.navigation ul {
-  list-style-type: none;
-}
-
-.navigation .nav-link img {
-  height: 160px;
-}
-
-.navigation a {
+.navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,8 +126,31 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 160px;
+}
+
+@media (max-width: 800px) {
+  .navigation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navigation .nav-link img {
   height: 160px;
+}
+
+@media (max-width: 800px) {
+  .navigation .nav-link img {
+    height: calc(100vw / 4);
+  }
+}
+
+.navigation a {
+  display: block;
+  width: minmax(80px, 160px);
+  height: minmax(80px, 160px);
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -144,6 +159,13 @@ html {
   border-radius: 50%;
   -webkit-transition: .6s;
   transition: .6s;
+}
+
+@media (max-width: 800px) {
+  .navigation a {
+    width: calc(100vw / 4);
+    height: calc(100vw / 4);
+  }
 }
 
 .navigation a:hover {
