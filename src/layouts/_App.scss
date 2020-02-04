@@ -10,10 +10,16 @@
 //   color: #222;
 // }
 
+//na moim telefonie, pionowo - wyszło 393px ale zachowuje się, jak przy 421
+// poziomo: 775
+//Mój telefon ma niby: 2340x1080  a w przeglądarce: 775x393
+// U Norberta  831x412
+
+
 .main {
   display: grid;
   //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
-  grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
+  grid-template-columns:   $nav-whel-size    1fr                $nav-whel-size;
   @media (max-width: 1200px) {
     grid-template-columns: $nav-whel-size/2  1fr                $nav-whel-size/2;
   }
