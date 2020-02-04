@@ -9,7 +9,12 @@
     }
     
     .nav-link {
-        
+        // display: grid;
+        // grid-auto-flow: row;
+
+        // display: flex;
+        // flex-direction: column;
+
         img{
             //position: relative;
             //display: block;
@@ -21,7 +26,10 @@
     }
     
     a {
-        display: block;
+        //display: block;
+        display: flex;
+        flex-direction: column;
+
         width: $nav-whel-size;
         height: $nav-whel-size;
         text-decoration: none;

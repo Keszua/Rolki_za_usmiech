@@ -30,6 +30,16 @@ html {
   }
 }
 
+@media (max-width: 800px) {
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 160px 160px 200px minmax(130vh, 1fr) auto;
+        grid-template-rows: 160px 160px 200px minmax(130vh, 1fr) auto;
+        grid-template-areas: "menuL" "menuR" "header" "page  "    "footer";
+  }
+}
+
 .main__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -117,7 +127,13 @@ html {
 }
 
 .navigation a {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 160px;
   height: 160px;
   text-decoration: none;
