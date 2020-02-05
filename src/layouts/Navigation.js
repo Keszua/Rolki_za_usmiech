@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, {Component, useRef, useEffect} from 'react';
 import '../css/style.css';
 import { NavLink } from 'react-router-dom';
 import Animated1 from '../components/Anim-mouse-mow';
@@ -6,6 +6,8 @@ import Animated2 from '../components/Anim-pageYOffset';
 import AnimRotateLoop from '../components/Anim-rotate_loop';
 
 import { TweenMax, TimelineMax, Power3 } from 'gsap';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
+
 
 
 //import img1 from '../images/wheel3-640.png';
@@ -35,22 +37,17 @@ const list = [
     {name: "Panel admina",      img: img_pa, dir: "right", path: "/admin"},
 ]
 
-const Navigation = (props) => {
-
-//-------------------------
-//Poczytać na : https://www.npmjs.com/package/react-gsap
-//Obejżeć https://www.youtube.com/watch?v=_-YfoAzIDzw
-    let logoItem = useRef('hello')
-    // useEffect(() => {
-    //   console.log("LogoItem:",logoItem);
-    //   //logoItem.style.display='none'; //efekt znikniecia 
-    //   TweenMax.to(logoItem, 3, {x:100, ease: Power3.easeOut})
-    // }, [])
-//---------------------------
+class Navigation extends Component {
+    state = { 
+        widthSize: 0,
+    }
+    
+    
+    render() { 
 
     let listShort = [];
     const LeftMenuCount = 4;
-    if(props.position==='left') {
+    if(this.props.position==='left') {
         listShort = list.slice(0, LeftMenuCount);
         listShort.forEach((el) => (el.dir = "left"));
     }
@@ -58,8 +55,10 @@ const Navigation = (props) => {
         listShort = list.slice(LeftMenuCount);
 
     const menu = listShort.map(item => (
-        <li key={item.name}>
-            {/* <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink>  */}
+
+
+
+//            <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink> 
             <div className="nav-link">
                 <NavLink to={item.path} exact={item.exact} > 
                     {/* <center> */}
@@ -72,27 +71,82 @@ const Navigation = (props) => {
                     {/* </center> */}
                 </NavLink> 
             </div>
-        </li>
     ))
 
-    return (
-      <>
-
-{/* --------------------------- */}
-        <img 
-          ref={el => {logoItem = el}}
-            //src={img_1}
-        alt="" />
-{/* --------------------------- */}
-
-        <nav>
-          <ul>
-            {menu}
-          </ul>
-        </nav>    
-        <AnimRotateLoop  />
-      </>     
-  )
+        return ( 
+            <>
+                    {/* <MenuRoundedIcon color="primary"   className={this.props.position==='left' ? "nav-link__left-m-icon" : "nav-link__right-m-icon"} /> */}
+                        {menu}
+                <AnimRotateLoop  />
+            </>     
+        );
+    }
 }
+ 
+
+
+// const Navigation = (props) => {
+
+// //-------------------------
+// //Poczytać na : https://www.npmjs.com/package/react-gsap
+// //Obejżeć https://www.youtube.com/watch?v=_-YfoAzIDzw
+//     let logoItem = useRef('hello')
+//     // useEffect(() => {
+//     //   console.log("LogoItem:",logoItem);
+//     //   //logoItem.style.display='none'; //efekt znikniecia 
+//     //   TweenMax.to(logoItem, 3, {x:100, ease: Power3.easeOut})
+//     // }, [])
+// //---------------------------
+
+//     let listShort = [];
+//     const LeftMenuCount = 4;
+//     if(props.position==='left') {
+//         listShort = list.slice(0, LeftMenuCount);
+//         listShort.forEach((el) => (el.dir = "left"));
+//     }
+//     else 
+//         listShort = list.slice(LeftMenuCount);
+
+//     const menu = listShort.map(item => (
+//         <li key={item.name}>
+//             {/* <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink>  */}
+//             <div className="nav-link">
+//                 <NavLink to={item.path} exact={item.exact} > 
+//                     {/* <center> */}
+//                     {/* {item.name}  */}
+//                     <Animated2
+//                         className="wheel-1"
+//                         src={item.img}
+//                         direction={item.dir}
+//                     />
+//                     {/* </center> */}
+//                 </NavLink> 
+//             </div>
+//         </li>
+//     ))
+
+//     return (
+//       <>
+
+// {/* --------------------------- */}
+//         <img 
+//           ref={el => {logoItem = el}}
+//             //src={img_1}
+//         alt="" />
+// {/* --------------------------- */}
+
+//         <nav>
+//         {/* <MenuRoundedIcon style={{ color: green[500] }} /> */}
+//             <MenuRoundedIcon color="primary" />
+        
+        
+//           <ul>
+//             {menu}
+//           </ul>
+//         </nav>    
+//         <AnimRotateLoop  />
+//       </>     
+//   )
+// }
  
 export default Navigation;

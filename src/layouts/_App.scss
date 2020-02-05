@@ -1,4 +1,4 @@
-
+﻿
 
 // div.app {
 //   display: flex;
@@ -20,7 +20,7 @@
   display: grid;
   //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
   grid-template-columns:   $nav-whel-size    1fr                $nav-whel-size;
-  @media (max-width: 1200px) {
+  @media (max-width: 1200px) { //poniżej 1200
     grid-template-columns: $nav-whel-size/2  1fr                $nav-whel-size/2;
   }
 
@@ -28,8 +28,25 @@
   grid-template-areas: 
   "header	  header 	  header"
   "menuL	  page     menuR"
-  ".		    footer		." 
-  ;
+  ".		    footer		." ;
+
+  @media (max-width: 800px) { //poniżej 800
+    grid-template-columns:  1fr;
+    grid-template-rows:   calc(100vw / 4)
+                          calc(100vw / 4)  
+                          200px                //dla  nagłówka
+                          minmax(130vh, 1fr)   
+                          auto;
+    
+    grid-template-areas: 
+    "menuL"
+    "menuR"
+    "header"
+    "page  "   
+    "footer" ;
+  
+  }
+
   min-height: 100%;
   background-color: $bg-main-color;
   overflow-x: hidden;  //utnij to co wystaje
@@ -40,7 +57,7 @@
 
   &__navLeft { 
     grid-area: menuL; 
-    @media (max-width: 1200px) {
+    @media (min-width: 800px) and (max-width: 1200px)  {
       margin-left: -80px;
     }
   }

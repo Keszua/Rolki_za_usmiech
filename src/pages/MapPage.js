@@ -1,13 +1,18 @@
 import React from 'react';
 import Iframe from 'react-iframe'
-import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
+//import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
 import { Alert, Container, Badge } from 'react-bootstrap';
 
 
 const MapPage = () => {
     return ( 
         <>
-            <Container fluid>
+
+
+
+
+        
+            {/* <Container fluid>
                 <br/>
                 <Alert variant="success">
                     <Alert.Heading><h1>Zaplanuj swoją rolkowa wycieczkę.</h1></Alert.Heading>
@@ -70,7 +75,7 @@ const MapPage = () => {
                     <Alert.Link href="/contact"> Poinformuj mnie o tym.</Alert.Link>.
                 </Alert>
 
-            </Container>
+            </Container> */}
 
            
         </>
