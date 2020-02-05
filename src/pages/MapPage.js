@@ -1,17 +1,141 @@
 import React from 'react';
 import Iframe from 'react-iframe'
 //import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
-import { Alert, Container, Badge } from 'react-bootstrap';
+//import { Alert, Container, Badge } from 'react-bootstrap';
+import { Container, Button, makeStyles, Typography, Grid       } from '@material-ui/core'
+import { Card, CardContent, CardActions  } from '@material-ui/core'
+import { Alert, AlertTitle    } from '@material-ui/lab'
+import { CheckCircleOutlineIcon  } from '@material-ui/icons';
+import CheckIcon from '@material-ui/icons/Check';
 
+const useStyles = makeStyles(theme => ({
+    root: {
+      
+      //width: '100%', '& > * + *': { marginTop: theme.spacing(2), },
+      maxWidth: '460px',
+      minWidth: '300px',
+      margin: '10px',
+      //border: '5px',
+      
+      //background: 'rgb(164, 199, 71)',
+      boxShadow: '3px 2px 3px 4px rgba(10, 10, 10, .4)',
+    },
+  }));
 
 const MapPage = () => {
+    
+    const classes = useStyles();
     return ( 
         <>
 
+            <Container fluid>
+                <br/>
+                <Alert severity="success" variant="outlined" >
+                    <AlertTitle><h1>Zaplanuj swoją rolkowa wycieczkę.</h1></AlertTitle>
+                    Zastanawiasz się gdzie można pojeździć na rolkach?
+                    <hr />
+                    <p>
+                        <br/>Zjeździłem cały Radom, przy okazji nanosząc na mapę jakoś powierzchni, jaką miałem pod kółeczkami.
+                        <br/>Skorzystaj z mapy, jaką dla Ciebie przygotowałem.    
+                    </p>
+                </Alert>
+                <br/>
+            </Container>
+
+            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" />
+            
+            <Grid container    > {/*justify="space-between"*/}
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Korzystaj z warstwa
+                        </Typography>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            Jazda po radomiu
+                        </Typography>
+                        Jak przejechać przez miasto, aby nie korzystać
+                        z dróg dla samochodów. 
+                        <br/>Kolory oddają stan chodników.
+
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            Nie ograniczaj się, wyjedź dalej!
+                        </Typography>
+                        Wyjedz po za Radom. 
+                        <br/>Wybierane trasy o mniejszym natężeniu ruchu. 
+                        <br/>Kolory oddają stan asfaltu na jezdni.
+                    </CardContent>
+                </Card>
+
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Wybierz odpowiednią nawierzchnię
+                        </Typography>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "green"}}>ZIELONY</strong>
+                        </Typography>
+                        Jazda to przyjemność. Relaksuj się na gładkich chodnikach, asfalcie, gładkiej kostce bez frezów.
+                        
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "blue"}}>NIEBIESKI</strong>
+                        </Typography>
+                        Chcesz poczuć mrówki na stopach? Sprzęt wytrzyma wstrzasy? Korzystaj z kostki z frezem oraz chodników w nieco gorszym stanie. 
+
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "blueviolet"}}>FIOLETOWY</strong>
+                        </Typography>
+                        Ciężkie odcinki, strome, szybkie. Tylko dla tych, którzy maja większe doświadczenie w szybkim hamowaniu.
+
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "dark"}}>CZARNY/BRĄZOWY</strong>
+                        </Typography>
+                        Mało uczęszczane drogi wewnętrzne, ślepe uliczki.
+
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "orange"}}>POMARAŃCZOWY</strong>
+                        </Typography>
+                        "Ja nie przejadę?" Nie polecane do jazdy, słaby, dziurawy chodnik. 
+
+                        <br/> <br/>
+                        <Typography gutterBottom variant="h6" component="h1" >
+                            <strong style={{color: "red"}}>CZERWONY</strong>
+                        </Typography>
+                        NIE przejezdny, Zwykle brak utwardzenia lub szalenie zniszczony chodnik/ulica. 
 
 
+                        {/* <Typography variant="body2" color="textSecondary" component="p">
+                            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                            across all continents except Antarctica
+                        </Typography> */}
 
-        
+                        {/* <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
+                        This is a success alert — check it out!
+                        </Alert> */}
+
+                    </CardContent>
+                </Card>
+
+                <Card className={classes.root}>
+                    <CardContent>
+                        <Alert severity="info"  variant="outlined">
+                        
+                        Masz uwagi, spostrzeżenia?
+                        {/* <Alert.Link href="/contact"> Poinformuj mnie o tym.</Alert.Link>. */}
+
+                        </Alert>
+                        <br/> Może coś jest nie aktualne?  
+
+                        <CardActions>
+                            <Button size="small" href="/contact" >Poinformuj mnie o tym.</Button>
+                        </CardActions>
+                    </CardContent>
+                </Card>
+            </Grid >
             {/* <Container fluid>
                 <br/>
                 <Alert variant="success">

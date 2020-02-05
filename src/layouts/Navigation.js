@@ -59,7 +59,7 @@ class Navigation extends Component {
 
 
 //            <NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink> 
-            <div className="nav-link">
+            <div key={item.name} className="nav-link">
                 <NavLink to={item.path} exact={item.exact} > 
                     {/* <center> */}
                     {/* {item.name}  */}
