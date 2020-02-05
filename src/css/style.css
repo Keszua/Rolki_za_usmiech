@@ -149,8 +149,8 @@ html {
 
 .navigation a {
   display: block;
-  width: minmax(80px, 160px);
-  height: minmax(80px, 160px);
+  width: 160px;
+  height: 160px;
   text-decoration: none;
   color: black;
   text-transform: uppercase;

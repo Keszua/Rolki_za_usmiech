@@ -17,11 +17,14 @@ const AdminPage = () => {
 
 class AdminPageSorce extends Component {
     state = { 
-        windowSize: window.innerWidth,
+        windowSizeW: window.innerWidth,
+        windowSizeH: window.innerHeight,
     }
 
     componentDidMount() {
-        window.addEventListener('resize', () => (  this.setState( {windowSize: window.innerWidth} )   ));
+        window.addEventListener('resize', () => (  
+            this.setState( {windowSizeW: window.innerWidth, windowSizeH: window.innerHeight} )   
+        ));
     }
 
     componentWillUnmount()  {
@@ -34,7 +37,8 @@ class AdminPageSorce extends Component {
         return ( 
             <>
                 <h3>Panel admina - dzień dobry</h3>
-                Wielkość ekranu: {this.state.windowSize}
+                <br/> Szerokość ekranu: {this.state.windowSizeW}
+                <br/> Wysokośc ekranu:  {this.state.windowSizeH}
             </>
         );
     }

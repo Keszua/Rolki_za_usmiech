@@ -40,8 +40,10 @@
         //display: flex;
         //flex-direction: column;
 
-        width:  minmax(80px, $nav-whel-size) ;
-        height:  minmax(80px, $nav-whel-size) ;
+        //width:  minmax(80px, $nav-whel-size) ; //to rozsypywało prawe menu
+        //height:  minmax(80px, $nav-whel-size) ;
+        width:  $nav-whel-size ;
+        height: $nav-whel-size ;
         @media (max-width: 800px) {
             width:  calc(100vw / 4);
             height:  calc(100vw / 4);
