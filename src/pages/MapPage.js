@@ -1,9 +1,6 @@
 import React from 'react';
 import Iframe from 'react-iframe'
-//import Alert from 'react-bootstrap/Alert'
-//import Container from 'react-bootstrap/Alert'
-   
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
 import { Alert, Container, Badge } from 'react-bootstrap';
 
 
@@ -22,12 +19,10 @@ const MapPage = () => {
                     </p>
                 </Alert>
 
-            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" 
-                width="100%" height="480" 
-                />
-                </Container>
+                <Iframe url="https://www.go ogle.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="480" />
+            </Container>
 
-            <Container fluid>
+            <Container d-flex>
                 <br/>
                 <Alert variant="light">
                     <Alert.Heading>Korzystaj z warstwa:</Alert.Heading>
@@ -69,7 +64,6 @@ const MapPage = () => {
                     Mało uczęszczane drogi wewnętrzne, ślepe uliczki.
                 </Alert>
 
-
                 <Alert variant="light">
                     <Alert.Heading>Masz uwagi, spostrzeżenia?</Alert.Heading>
                     Może coś jest nie aktualne?  
@@ -77,18 +71,6 @@ const MapPage = () => {
                 </Alert>
 
             </Container>
-
-            {/* <br/>ZIELONY - Jazda to przyjemność. Relaksuj się na gładkich chodnikach, asfalcie, gładkiej kostce bez frezów.
-            <br/>NIEBIESKI - Chcesz poczuć mrówki na stopach? Sprzęt wytrzyma wstrząsy? Korzystaj z kostki z frezem oraz chodników w nieco gorszym stanie. 
-            <br/>POMARAŃCZOWY - "Ja nie przejadę?" Nie polecane do jazdy, słaby, dziurawy chodnik.
-            <br/>CZERWONY - NIE przejezdny, Zwykle brak utwardzenia lub szalenie zniszczony chodnik/ulica.
-            <br/>FIOLETOWY - Ciężkie odcinki, strome, szybkie. Tylko dla tych, którzy lubią się czasami poździerać.
-            <br/>CZARNY/BRĄZOWY - Mało uczęszczane drogi wewnętrzne, ślepe uliczki.
-            <br/>
-            W trybie pełnoekranowym, zostaniesz przełączony na nowa stronę do swojej domyślnej przeglądarki.
-            uzyskasz dostęp do legendy, gdzie otrzymasz dostęp do wyboru warstwy i wszystkich wprowadzonych tras.
-            <br/>
-            <br/> */}
 
            
         </>
