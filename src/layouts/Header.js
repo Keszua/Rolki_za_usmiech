@@ -10,24 +10,19 @@ const Header = () => {
     return ( 
         <>
             <Switch>
-                <Route path="/" exact render={() => (
-                    <img src={img1} alt="baner" />
-                )}/>
-                <Route path="/products" render={() => (
-                    <img src={img2} alt="baner" />
-                )}/>
-                <Route path="/contact" render={() => (
-                    <img src={img1} alt="baner" />
-                )}/>
-                <Route path="/admin" render={() => (
-                    <img src={img3} alt="baner" />
-                )}/>
-                <Route render={() => (
-                    <img src={img3} alt="baner" />
-                )}/>
+                <Route path="/" exact   render={() => (  <img src={img1} alt="baner" /> )}/>
+                <Route path="/products" render={() => ( <img src={img2} alt="baner" /> )}/>
+                <Route path="/contact"  render={() => ( <img src={img1} alt="baner" /> )}/>
+                <Route path="/admin"    render={() => ( <img src={img3} alt="baner" /> )}/>
+                <Route                  render={() => ( <img src={img3} alt="baner" /> )}/>
             </Switch>
         </>
      );
 }
  
+
+
+
+
+
 export default Header;
