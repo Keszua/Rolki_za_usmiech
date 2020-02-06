@@ -5,8 +5,8 @@ import Iframe from 'react-iframe'
 import { Container, Button, makeStyles, Typography, Grid       } from '@material-ui/core'
 import { Card, CardContent, CardActions  } from '@material-ui/core'
 import { Alert, AlertTitle    } from '@material-ui/lab'
-import { CheckCircleOutlineIcon  } from '@material-ui/icons';
-import CheckIcon from '@material-ui/icons/Check';
+//import { CheckCircleOutlineIcon  } from '@material-ui/icons';
+//import CheckIcon from '@material-ui/icons/Check';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -28,7 +28,7 @@ const MapPage = () => {
     return ( 
         <>
 
-            <Container fluid>
+            <Container >
                 <br/>
                 <Alert severity="success" variant="outlined" >
                     <AlertTitle><h1>Zaplanuj swoją rolkowa wycieczkę.</h1></AlertTitle>
@@ -136,7 +136,7 @@ const MapPage = () => {
                     </CardContent>
                 </Card>
             </Grid >
-            {/* <Container fluid>
+            {/* <Container >
                 <br/>
                 <Alert variant="success">
                     <Alert.Heading><h1>Zaplanuj swoją rolkowa wycieczkę.</h1></Alert.Heading>

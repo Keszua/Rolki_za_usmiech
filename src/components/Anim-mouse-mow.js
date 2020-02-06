@@ -33,7 +33,7 @@ class Animated1 extends Component {
 
     render() {
         const { className, src } = this.props;
-        const { posX, posY } = this.state;
+        const { posY } = this.state;
         //console.log(this.state);
         return (
             <img 
