@@ -20,9 +20,9 @@
 .main {
   display: grid;
   //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
-  grid-template-columns:   $nav-whel-size    1fr                $nav-whel-size;
+  grid-template-columns:   $nav-whel-size    80%                $nav-whel-size;
   @media (max-width: 1200px) { //poniżej 1200
-    grid-template-columns: $nav-whel-size/2  1fr                $nav-whel-size/2;
+    grid-template-columns: $nav-whel-size/2  70%                $nav-whel-size/2;
   }
 
   grid-template-rows:    200px           minmax(130vh, 1fr)   auto;
@@ -32,11 +32,11 @@
   ".		    footer		." ;
 
   @media (max-width: 800px) { //poniżej 800
-    grid-template-columns:  1fr;
+    grid-template-columns:  100%;
     grid-template-rows:   calc(100vw / 4)
                           calc(100vw / 4)  
-                          200px                //dla  nagłówka
-                          minmax(130vh, 1fr)   
+                          360px                //dla  nagłówka
+                          minmax(130vh, 100%)   
                           auto;
     
     grid-template-areas: 

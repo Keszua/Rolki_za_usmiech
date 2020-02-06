@@ -13,8 +13,8 @@ html {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 160px 1fr 160px;
-      grid-template-columns: 160px 1fr 160px;
+  -ms-grid-columns: 160px 80% 160px;
+      grid-template-columns: 160px 80% 160px;
   -ms-grid-rows: 200px minmax(130vh, 1fr) auto;
       grid-template-rows: 200px minmax(130vh, 1fr) auto;
       grid-template-areas: "header	  header 	  header" "menuL	  page     menuR" ".		    footer		.";
@@ -25,17 +25,17 @@ html {
 
 @media (max-width: 1200px) {
   .main {
-    -ms-grid-columns: 80px 1fr 80px;
-        grid-template-columns: 80px 1fr 80px;
+    -ms-grid-columns: 80px 70% 80px;
+        grid-template-columns: 80px 70% 80px;
   }
 }
 
 @media (max-width: 800px) {
   .main {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: calc(100vw / 4) calc(100vw / 4) 200px minmax(130vh, 1fr) auto;
-        grid-template-rows: calc(100vw / 4) calc(100vw / 4) 200px minmax(130vh, 1fr) auto;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: calc(100vw / 4) calc(100vw / 4) 360px minmax(130vh, 100%) auto;
+        grid-template-rows: calc(100vw / 4) calc(100vw / 4) 360px minmax(130vh, 100%) auto;
         grid-template-areas: "menuL" "menuR" "header" "page  "    "footer";
   }
 }
