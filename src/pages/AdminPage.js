@@ -28,7 +28,7 @@ class AdminPageSorce extends Component {
     }
 
     componentWillUnmount()  {
-        window.addEventListener('resize', {} );
+        window.removeEventListener('resize', {} );
     }
 
 

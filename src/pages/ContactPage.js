@@ -31,8 +31,8 @@ class ContactPage extends React.Component {
                     <button>Wyślij</button>
                 </form>
                 <Prompt /* Warunek sprawdzany, przy prubie zmiany strony. Gdy warunek jest spełniony, blokuje zmianę strony */
-                    when={this.state.value}
-                    message="Masz nie wypełniony formularz. Czy na pewno chesz opuścić tę tronę"
+                    when={ this.state.value ? true : false }
+                    message="W formularzu znajduje się nie wysłana treść. Czy na pewno chesz opuścić tą stronę"
                 />
             </div>
             

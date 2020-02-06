@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import { Tween, TimelineMax } from "gsap";
 
 class AnimRotateLoop extends Component {
     state = {
@@ -26,17 +25,8 @@ class AnimRotateLoop extends Component {
         })
     }
 
-    //my-class
-
     render() {
         const { className, src } = this.props;
-
-//        return <div ref={div => this.myElement = div} />;
-
-        //const tl = new Timeline();
-
-        // let rot = this.state.rotation /2;
-        // if(this.props.direction === "left") rot = -rot;
 
         return (
             <img
