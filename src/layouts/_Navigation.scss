@@ -2,77 +2,60 @@
 
 
 .navigation {
-    //padding: 0 30px 30px 0;    //góra, prawo dol lewo
-
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 800px) {
-        flex-direction: row;
-    }
-
 
     .nav-link {
-        // display: grid;
-        // grid-auto-flow: row;
 
+        @media (min-width: $ekran-sredni) { //wykna się tylko dla szerokości większej niż 800
+            width: $nav-whel-size/2;
+        }
+        @media (min-width: $ekran-dozy) { //wykna się tylko dla szerokości większej niż 800
+            width: $nav-whel-size;
+        }
 
-        img{
-            //position: relative;
-            //display: block;
-            //width: $nav-whel-size;
-            // margin-left: -80px;
-            
-            height: $nav-whel-size;
-            //height: calc( 100vw / 4);
+        img {
+            height: calc( calc(100vw - 16px) / 4);
 
-            @media (max-width: 800px) {
-                //height: calc(100vw / 4);
-                $nav-whel-size: calc(100vw / 4);
+            @media (min-width: $ekran-sredni) { //wykna się tylko dla szerokości większej niż 800
                 height: $nav-whel-size;
             }
-        
+
+            @media (min-width: $ekran-dozy) { //wykna się tylko dla szerokości większej niż 800
+                height: $nav-whel-size;
+            }
         }
-        
     }
     
     a {
         display: block;
-        //display: flex;
-        //flex-direction: column;
-
-        //width:  minmax(80px, $nav-whel-size) ; //to rozsypywało prawe menu
-        //height:  minmax(80px, $nav-whel-size) ;
-        width:  $nav-whel-size ;
-        height: $nav-whel-size ;
-        @media (max-width: 800px) {
-            width:  calc(100vw / 4);
-            height:  calc(100vw / 4);
-            //$nav-whel-size: calc(100vw / 4);
+        width: calc( calc(100vw - 16px) / 4);
+        height: calc( calc(100vw - 16px) / 4);
+        @media (min-width: $ekran-sredni) {
+            width:  $nav-whel-size ;
+            height: $nav-whel-size ;
         }
     
+        @media (min-width: $ekran-dozy) {
+            width:  $nav-whel-size ;
+            height: $nav-whel-size ;
+            margin-left: 0px;
+        }
+
         text-decoration: none;
         color: black;
         text-transform: uppercase;
         font-weight: bold;
-        //padding: 10px;
         margin:0 auto;
         border-radius: 50%;
-        
         transition: .6s;
-        
     }
     
     a:hover {
-        //        transform: translateX(20px);
         transform: rotate(90deg) ;
-        // background-color: green;
+        //background-color: green;
     }
 
     a.active {
-        //border-left: 10px gray solid;
-        //transform: translateX(0px);
         animation: pelny-obrot 20s linear;
-        //animation: pelny-obrot 20s ease-in-out;
         animation-iteration-count: infinite;
     }
 
@@ -83,6 +66,30 @@
         75% { transform: rotate(-180deg); }  
         100% { transform: rotate(-270deg); }
     }
-
 }
 
+.navLeft {
+
+    @media (min-width: $ekran-sredni) {
+        a {
+            margin-left: $nav-whel-size/2 * -1;
+        }
+    }
+    @media (min-width: $ekran-dozy) {
+        a {
+                margin-left: 0px;
+        }
+    }
+}
+
+.navRight {
+        
+    @media (min-width: $ekran-sredni) {
+        a {
+                margin-left: 0px;
+        }
+    }
+    @media (min-width: $ekran-dozy) {
+    
+    }
+}
