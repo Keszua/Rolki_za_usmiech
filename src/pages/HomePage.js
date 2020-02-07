@@ -44,9 +44,8 @@ const HomePage = () => {
     
     return(
         <div className="home">
-            {/* {artList} */}
+            {artList}
             {/* <DemoCarousel/> */}
-            {/* <Karuzelab/> */}
             <KaruzelaC/>
         </div>
     );
@@ -62,17 +61,17 @@ const KaruzelaC = () => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const chevronWidth = 40;
     return (
-        <div style={{"padding":5,  "maxWidth":"1fr","margin":10}}>
+        <div style={{"padding":5, width: '60vw', "maxWidth":"1fr","margin":10}}>
         
         <ItemsCarousel
-        containerWidth={'200px'}
+            containerWidth={'200px'}
             infiniteLoop
             gutter={12}
             activePosition={'center'}
             //chevronWidth={200}
             //disableSwipe
             //alwaysShowChevrons
-            numberOfCards={1}
+            numberOfCards={2}
             slidesToScroll={1}
             //outsideChevron
             chevronWidth={chevronWidth}
@@ -83,8 +82,8 @@ const KaruzelaC = () => {
             leftChevron={<button>{'<'}</button>}
             rightChevron={<button>{'>'}</button>}
         >
-          <div key={1} style={{ height: 200, background: '#EEE' }}>First card</div>
-          <div key={2} style={{ height: 300, background: 'url(https://placeimg.com/380/200/nature)' }}>Second card</div>
+          <div key={1} style={{ height: 200, background: 'url(https://placeimg.com/380/200/nature)' }}>First card</div>
+          <div key={2} style={{ height: 200, background: 'url(https://placeimg.com/380/200/nature)' }}>Second card</div>
           <div key={3} style={{ height: 200, background: '#000' }}>Third card</div>
           <div key={4} style={{ height: 200, background: '#EEE' }}>Fourth card</div>
         </ItemsCarousel>
@@ -93,31 +92,6 @@ const KaruzelaC = () => {
     );
 }
  
-
-
-
-class Karuzelab extends React.Component {
-    render() {
-      return (
-        <CarouselProvider
-                naturalSlideWidth={100}
-                naturalSlideHeight={125}
-                totalSlides={3}
-                interval={2000}
-                isPlaying={true}
-                lockOnWindowScroll={true}
-            >
-            <Slider>
-                <Slide index={0}><img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" /></Slide>
-                <Slide index={1}><img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" /></Slide>
-                <Slide index={2}>I am the third Slide.</Slide>
-            </Slider>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
-        </CarouselProvider>
-      );
-    }
-  }
 
 
 class DemoCarousel extends React.Component {

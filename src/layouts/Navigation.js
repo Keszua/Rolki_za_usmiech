@@ -45,8 +45,12 @@ class Navigation extends Component {
             listShort = list.slice(0, LeftMenuCount);
             listShort.forEach((el) => (el.dir = "left"));
         }
-        else 
+        else if (this.props.position==='right') {
             listShort = list.slice(LeftMenuCount);
+        }
+        else  
+            listShort = list;
+        
 
         const menu = listShort.map(item => (
             //<NavLink to={item.path} activeClassName="news-selected">{item.name}</NavLink> 

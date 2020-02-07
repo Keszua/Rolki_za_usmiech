@@ -1,85 +1,177 @@
 ﻿
-
-// div.app {
-//   display: flex;
-//   flex-direction: column;
-//   min-height: 100vh; //minimalnie ma zajmować wielkośc strony (może zajmowac mniej)
-//   width: 100%;
-//   margin: 0 auto;
-//   background-color: #ddd;
-//   color: #222;
-// }
-
 //na moim telefonie:
 //- tryb zwykły: 775x393px (ale zachowuje się, jak przy 421)
 //- tryb "komputerowy:  980x980 (niezależnie od pozycji telefonu)
 //Mój telefon ma niby: 2340x1080  a w przeglądarce: 775x393
 // U Norberta  831x412
 
-
 .main {
-  display: grid;
-  //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
-  grid-template-columns:   $nav-whel-size    80%                $nav-whel-size;
-  @media (max-width: 1200px) { //poniżej 1200
-    grid-template-columns: $nav-whel-size/2  70%                $nav-whel-size/2;
-  }
+  // display: grid;
+  // //grid-template-columns: $nav-whel-size  1fr                $nav-whel-size;
+  // grid-template-columns:   $nav-whel-size   minmax(80% 90%)                 $nav-whel-size;
+  // @media (max-width: 1200px) { //poniżej 1200
+  //   grid-template-columns: $nav-whel-size/2  960px                 $nav-whel-size/2;
+  // }
 
-  grid-template-rows:    200px           minmax(130vh, 1fr)   auto;
-  grid-template-areas: 
-  "header	  header 	  header"
-  "menuL	  page     menuR"
-  ".		    footer		." ;
+  // grid-template-rows:    200px           minmax(130vh, 1fr)   auto;
+  // grid-template-areas: 
+  // "header	  header 	  header"
+  // "menuL	  page      menuR"
+  // ".		    footer		." ;
 
-  @media (max-width: 800px) { //poniżej 800
-    grid-template-columns:  100%;
-    grid-template-rows:   calc(100vw / 4)
-                          calc(100vw / 4)  
-                          360px                //dla  nagłówka
-                          minmax(130vh, 100%)   
-                          auto;
+  // @media (max-width: 800px) { //poniżej 800
+  //   grid-template-columns:  100%;
+  //   grid-template-rows:   calc(100vw / 4)
+  //                         calc(100vw / 4)  
+  //                         360px                //dla  nagłówka
+  //                         minmax(130vh, 100%)   
+  //                         auto;
     
-    grid-template-areas: 
-    "menuL"
-    "menuR"
-    "header"
-    "page  "   
-    "footer" ;
+  //   grid-template-areas: 
+  //   "menuL"
+  //   "menuR"
+  //   "header"
+  //   "page  "   
+  //   "footer" ;
   
-  }
+  // }
 
-  min-height: 100%;
-  background-color: $bg-main-color;
-  overflow-x: hidden;  //utnij to co wystaje
 
-  &__header { 
-    grid-area: header; 
-  }
+//-----------------------------------------------------------------------------
+    display: flex;
+    flex-direction: column;
+    //overflow-x: hidden;  //utnij to co wystaje
+    min-height: 100%;
+    background-color: $bg-main-color;
+}
 
-  &__navLeft { 
-    grid-area: menuL; 
-    @media (min-width: 800px) and (max-width: 1200px)  {
-      margin-left: -80px;
+.p_body {
+    display: flex;
+    flex-direction: row;
+    //overflow-x: hidden;  //utnij to co wystaje
+    
+    
+    background-color: $bg-main-color;
+    
+    .page {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+      width: 100px;
+      min-height: 200vh;
+      @media (min-width: 800px) { //wykona się tylko dla szerokości większej niż 800
+        flex-grow: 0;
+      }
+      @media (min-width: 1200px) { //wykona się tylko dla szerokości większej niż 800
+        flex-grow: 0;
+      }
     }
-  }
+}
 
-  &__navRight { 
-    grid-area: menuR; 
-  }
+.top {
+    display: flex;
+    flex-direction: column;
 
-  &__page { 
-    grid-area: page; 
-    //height: 80vh;
-  }
+    &__nav {
+      display: flex;
+      flex-direction: column;
 
-  &__footer { 
-    grid-area: footer; 
-    //position:relative ;
-    //bottom: 0; 
-     
+      &--left {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &--right {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__header {
+      width: 100%;
+      height: 200px;
+    }
+}
+
+.navLeft {
+  display: none;
+}
+
+.navRight { 
+  display: none;
+}
+
+.page {
+  height: 130vh;
+
+}
+
+
+
+//-----------------------------------------------------------------------------
+@media (min-width: 800px) { //wykona się tylko dla szerokości większej niż 800
+    .p_body{
+        .page {
+          flex-grow: 1;
+        }
+    }
+    
+    .top {
+        &__nav {
+          display: none;
+        }
+    }
+    
+    .navLeft { 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navRight { 
+        display: flex;
+        flex-direction: column;
+        //align-items: flex-start;          
+    }
+}
+//-----------------------------------------------------------------------------
+@media (min-width: 1200px) { //wykna się tylko dla szerokości większej niż 1200
+
+  .p_body{
+    //justify-content: space-between;
+    align-items: flex-start;
+
+      .page {
+        flex-grow: 1;
+      }
+  }
+  
+  .top {
+      &__nav {
+        display: none;
+      }
+  }
+  
+  .navLeft { 
+      display: flex;
+      flex-direction: column;
+      //align-items: flex-start;
+  }
+  
+  .navRight { 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;          
   }
 
 }
+
+
+
+
+
+
+
 
 
 
