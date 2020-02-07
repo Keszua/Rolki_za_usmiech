@@ -5,6 +5,7 @@
 
     .nav-link {
 
+        padding: 0;
         @media (min-width: $ekran-sredni) { //wykna się tylko dla szerokości większej niż 800
             width: $nav-whel-size/2;
         }

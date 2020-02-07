@@ -231,6 +231,10 @@ html {
 }
 */
 /* Plik Navigation.js */
+.navigation .nav-link {
+  padding: 0;
+}
+
 @media (min-width: 800px) {
   .navigation .nav-link {
     width: 80px;
