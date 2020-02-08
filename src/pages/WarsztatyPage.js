@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container'
+//import Container from 'react-bootstrap/Container'
 import Carousel from 'react-bootstrap/Carousel'
 
 
@@ -11,14 +11,14 @@ const WarsztatyPage = () => {
     return ( 
         <>
             <div>Warsztaty Page</div>
-            <Karuzela/>
+            <KaruzelaBootstrap/>
         </>
      );
 }
  
 
 
-function Karuzela() {
+function KaruzelaBootstrap() {
     return ( 
     // <Container>   
         <Carousel>
