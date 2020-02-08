@@ -5,13 +5,14 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Page from './Page';
 import Footer from './Footer';
-
+import TestKaruzeli from './TestKaruzeli';
 
 
 function App() {
 
   return (
     <Router basename={process.env.PUBLIC_URL}>
+      
       <div className="main">
         <div className="top">
           <div className="top__nav navigation" >
@@ -22,9 +23,9 @@ function App() {
               <Navigation position="right"/>
             </nav>
           </div> 
-          <header className="top__header">
+          <div className="top__header">
             <Header/>
-          </header>
+          </div>
         </div>
 
         <div className="p_body">

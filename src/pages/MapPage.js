@@ -41,10 +41,15 @@ const MapPage = () => {
                 </Alert>
                 <br/>
             </Container>
-
-            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" />
-            
-            <Grid container    > {/*justify="space-between"*/}
+            <div style={{  //możliwość stylowania aktywnego elementu
+                    backgroundColor: 'gray',
+                    width:"100%",
+                    height:"100vh",
+                  }}
+            >
+            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="100%" />
+            </div>
+            <Grid container    > 
                 <Card className={classes.root}>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
@@ -136,6 +141,7 @@ const MapPage = () => {
                     </CardContent>
                 </Card>
             </Grid >
+            
             {/* <Container >
                 <br/>
                 <Alert variant="success">

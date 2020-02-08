@@ -15,25 +15,28 @@ import "bootstrap/dist/css/bootstrap.css";
 const Header = () => {
     return ( 
         <>
-            <Switch>
+            
+            <KaruzelaBootstrap/>
+
+            {/* <Switch>
                 <Route path="/" exact   render={() => ( <div> <WarsztatyPage/> </div> )}/>
                 <Route path="/products" render={() => ( <img src={img2} alt="baner" /> )}/>
                 <Route path="/warsztaty"  render={() => ( <WarsztatyPage/>  )}/>
                 <Route path="/admin"    render={() => ( <img src={img3} alt="baner" /> )}/>
                 <Route                  render={() => ( <img src={img3} alt="baner" /> )}/>
-            </Switch>
+            </Switch> */}
         </>
      );
 }
 
-const WarsztatyPage = () => {
-    return ( 
-        <>
-            <div>Nagłówek</div>
-            <KaruzelaBootstrap/>
-        </>
-     );
-}
+// const WarsztatyPage = () => {
+//     return ( 
+//         <>
+//             <div>Nagłówek</div>
+//             <KaruzelaBootstrap/>
+//         </>
+//      );
+// }
 
 function KaruzelaBootstrap() {
     return ( 
