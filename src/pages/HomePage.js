@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 import Article from '../components/Article'
 //var Carousel = require('react-responsive-carousel').Carousel;
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+//import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { Carousel } from 'react-responsive-carousel';
+//import { Carousel } from 'react-responsive-carousel';
 
 //kolejna karuzela z: https://github.com/bitriddler/react-items-carousel
 import ItemsCarousel from 'react-items-carousel';
-import styled from 'styled-components';
+//import styled from 'styled-components';
 
 
 //import { Button, Icon, Col } from 'antd';
@@ -51,11 +51,11 @@ const HomePage = () => {
     );
 }
 
-const Wrapper = styled.div`
-  padding: 0 20px;
-  max-width: 300px;
-  margin: 0 auto;
-`;
+// const Wrapper = styled.div`
+//   padding: 0 20px;
+//   max-width: 300px;
+//   margin: 0 auto;
+// `;
 
 const KaruzelaC = () => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
@@ -94,38 +94,38 @@ const KaruzelaC = () => {
  
 
 
-class DemoCarousel extends React.Component {
-    render() {
-        return (
-            <Carousel autoPlay >
-                <div>
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <div>Tekst 3</div>
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    <div>Tekst 4</div>
-                    <p className="legend">Legend 4</p>
-                </div>
-                <div>
-                    <div>Tekst 5</div>
-                    <p className="legend">Legend 5</p>
-                </div>
-                <div>
-                    <div>Tekst 6</div>
-                    <p className="legend">Legend 6</p>
-                </div>
-            </Carousel>
-        );
-    }
-};
+// class DemoCarousel extends React.Component {
+//     render() {
+//         return (
+//             <Carousel autoPlay >
+//                 <div>
+//                     <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+//                     <p className="legend">Legend 1</p>
+//                 </div>
+//                 <div>
+//                 <img src="http://lorempixel.com/output/cats-q-c-640-480-2.jpg" />
+//                     <p className="legend">Legend 2</p>
+//                 </div>
+//                 <div>
+//                     <div>Tekst 3</div>
+//                     <p className="legend">Legend 3</p>
+//                 </div>
+//                 <div>
+//                     <div>Tekst 4</div>
+//                     <p className="legend">Legend 4</p>
+//                 </div>
+//                 <div>
+//                     <div>Tekst 5</div>
+//                     <p className="legend">Legend 5</p>
+//                 </div>
+//                 <div>
+//                     <div>Tekst 6</div>
+//                     <p className="legend">Legend 6</p>
+//                 </div>
+//             </Carousel>
+//         );
+//     }
+// };
 
 
 

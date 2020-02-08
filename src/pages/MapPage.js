@@ -1,5 +1,5 @@
 import React from 'react';
-import Iframe from 'react-iframe'
+//import Iframe from 'react-iframe'
 //import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
 //import { Alert, Container, Badge } from 'react-bootstrap';
 import { Container, Button, makeStyles, Typography, Grid       } from '@material-ui/core'
@@ -42,7 +42,7 @@ const MapPage = () => {
                 <br/>
             </Container>
 
-            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" />
+            {/* <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" /> */}
             
             <Grid container    > {/*justify="space-between"*/}
                 <Card className={classes.root}>
