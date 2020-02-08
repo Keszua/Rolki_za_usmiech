@@ -1,5 +1,5 @@
 import React from 'react';
-//import Iframe from 'react-iframe'
+import Iframe from 'react-iframe'
 //import 'bootstrap/dist/css/bootstrap.css';  //Ta biblioteka wysypuje mi GRID'a
 //import { Alert, Container, Badge } from 'react-bootstrap';
 import { Container, Button, makeStyles, Typography, Grid       } from '@material-ui/core'
@@ -11,14 +11,14 @@ import { Alert, AlertTitle    } from '@material-ui/lab'
 const useStyles = makeStyles(theme => ({
     root: {
       
-      //width: '100%', '& > * + *': { marginTop: theme.spacing(2), },
-      maxWidth: '460px',
-      minWidth: '300px',
-      margin: '10px',
-      //border: '5px',
-      
-      //background: 'rgb(164, 199, 71)',
-      boxShadow: '3px 2px 3px 4px rgba(10, 10, 10, .4)',
+        //width: '100%', '& > * + *': { marginTop: theme.spacing(2), },
+        maxWidth: '460px',
+        minWidth: '300px',
+        margin: '10px',
+        //border: '5px',
+        
+        //background: 'rgb(164, 199, 71)',
+        boxShadow: '3px 2px 3px 4px rgba(10, 10, 10, .4)',
     },
   }));
 
@@ -42,7 +42,7 @@ const MapPage = () => {
                 <br/>
             </Container>
 
-            {/* <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" /> */}
+            <Iframe url="https://www.google.com/maps/d/embed?mid=11wRktITey292ZcSmWtZh8GGdCuQ" width="100%" height="600" />
             
             <Grid container    > {/*justify="space-between"*/}
                 <Card className={classes.root}>
