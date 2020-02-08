@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.06599f84.chunk.css",
-    "main.js": "/static/js/main.2824a2c3.chunk.js",
-    "main.js.map": "/static/js/main.2824a2c3.chunk.js.map",
+    "main.css": "/static/css/main.80fbbae3.chunk.css",
+    "main.js": "/static/js/main.2b874eb2.chunk.js",
+    "main.js.map": "/static/js/main.2b874eb2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.52b67c28.js",
     "runtime-main.js.map": "/static/js/runtime-main.52b67c28.js.map",
-    "static/js/2.0b8ae8b2.chunk.js": "/static/js/2.0b8ae8b2.chunk.js",
-    "static/js/2.0b8ae8b2.chunk.js.map": "/static/js/2.0b8ae8b2.chunk.js.map",
+    "static/css/2.81f13f92.chunk.css": "/static/css/2.81f13f92.chunk.css",
+    "static/js/2.395fabff.chunk.js": "/static/js/2.395fabff.chunk.js",
+    "static/js/2.395fabff.chunk.js.map": "/static/js/2.395fabff.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b807e09710d08e7a77bdcde88464bd0b.js": "/precache-manifest.b807e09710d08e7a77bdcde88464bd0b.js",
+    "precache-manifest.93895fcd1274f5a48488c46178d9aa63.js": "/precache-manifest.93895fcd1274f5a48488c46178d9aa63.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.06599f84.chunk.css.map": "/static/css/main.06599f84.chunk.css.map",
-    "static/js/2.0b8ae8b2.chunk.js.LICENSE.txt": "/static/js/2.0b8ae8b2.chunk.js.LICENSE.txt",
+    "static/css/2.81f13f92.chunk.css.map": "/static/css/2.81f13f92.chunk.css.map",
+    "static/css/main.80fbbae3.chunk.css.map": "/static/css/main.80fbbae3.chunk.css.map",
+    "static/js/2.395fabff.chunk.js.LICENSE.txt": "/static/js/2.395fabff.chunk.js.LICENSE.txt",
     "static/media/__kolo1-KONTAKT.svg": "/static/media/__kolo1-KONTAKT.db5ba4fd.svg",
     "static/media/__kolo1-MAPA.svg": "/static/media/__kolo1-MAPA.4ec3fb02.svg",
     "static/media/__kolo1-NAUKA.svg": "/static/media/__kolo1-NAUKA.22757aad.svg",
     "static/media/__kolo1-PANEL.svg": "/static/media/__kolo1-PANEL.347a3599.svg",
-    "static/media/__kolo1-PIELGRZYMKA.svg": "/static/media/__kolo1-PIELGRZYMKA.ea8a20e7.svg",
     "static/media/__kolo1-START-01.svg": "/static/media/__kolo1-START-01.db0fa027.svg",
     "static/media/__kolo1-WARSZTATY.svg": "/static/media/__kolo1-WARSZTATY.52469d17.svg",
     "static/media/__kolo1-ZBIORKA.svg": "/static/media/__kolo1-ZBIORKA.9110c859.svg",
@@ -27,8 +28,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.52b67c28.js",
-    "static/js/2.0b8ae8b2.chunk.js",
-    "static/css/main.06599f84.chunk.css",
-    "static/js/main.2824a2c3.chunk.js"
+    "static/css/2.81f13f92.chunk.css",
+    "static/js/2.395fabff.chunk.js",
+    "static/css/main.80fbbae3.chunk.css",
+    "static/js/main.2b874eb2.chunk.js"
   ]
 }
