@@ -5,7 +5,6 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Page from './Page';
 import Footer from './Footer';
-import TestKaruzeli from './TestKaruzeli';
 
 
 function App() {
@@ -34,9 +33,9 @@ function App() {
           </nav>
           <section  className="page">
             <Page/>
-            <footer className="footer">
+            {/* <footer className="footer">
               <Footer/>
-            </footer>
+            </footer> */}
           </section>
           <nav className="navRight navigation">
             <Navigation position="right"/>
