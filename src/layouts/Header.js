@@ -12,18 +12,26 @@ import styled from 'styled-components';
 const Header = () => {
     return ( 
         <>
-            <Switch>
+            {/* <Switch>
                 <Route path="/" exact   render={() => (  <div> <KaruzelaC/> </div> )}/>
                 <Route path="/products" render={() => ( <img src={img2} alt="baner" /> )}/>
                 <Route path="/contact"  render={() => ( <img src={img1} alt="baner" /> )}/>
                 <Route path="/admin"    render={() => ( <img src={img3} alt="baner" /> )}/>
                 <Route                  render={() => ( <img src={img3} alt="baner" /> )}/>
-            </Switch>
+            </Switch> */}
         </>
      );
 }
 
 const chevronWidth = 40;
+// const WarsztatyPage = () => {
+//     return ( 
+//         <>
+//             <div>Nagłówek</div>
+//             <KaruzelaBootstrap/>
+//         </>
+//      );
+// }
 
 const Wrapper = styled.div`
 padding: 0 ${chevronWidth}px;

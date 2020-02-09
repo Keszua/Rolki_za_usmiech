@@ -10,8 +10,11 @@ import "bootstrap/dist/css/bootstrap.css";
 const WarsztatyPage = () => {
     return ( 
         <>
-            <div>Warsztaty Page</div>
-            <KaruzelaBootstrap/>
+            <h1>Warsztaty Page</h1>
+
+            
+
+            {/* <KaruzelaBootstrap/> */}
         </>
      );
 }

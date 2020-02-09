@@ -7,12 +7,12 @@ import Animated2 from '../components/Anim-pageYOffset';
 
 
 //import img1 from '../images/wheel3-640.png';
-import img_01 from '../svg/kolo1.svg';
+//import img_01 from '../svg/kolo1.svg';
 import img_st from '../svg/__kolo1-START-01.svg';
 import img_na from '../svg/__kolo1-NAUKA.svg';
 import img_wa from '../svg/__kolo1-WARSZTATY.svg';
 import img_zb from '../svg/__kolo1-ZBIORKA.svg';
-//import img_pi from '../svg/__kolo1-PIELGRZYMKA.svg';
+import img_pi from '../svg/__kolo1-PIELGRZYMKA.svg';
 import img_ma from '../svg/__kolo1-MAPA.svg';
 import img_ko from '../svg/__kolo1-KONTAKT.svg';
 import img_pa from '../svg/__kolo1-PANEL.svg';
@@ -25,8 +25,8 @@ const list = [
     {name: "Nauka jazdy",       img: img_na, dir: "right", path: "/nauka"},
     {name: "Warsztaty rolkowe", img: img_wa, dir: "right", path: "/warsztaty"},
     {name: "Zbiórka rolek",     img: img_zb, dir: "right", path: "/zbiorka"},
-    //{name: "Pielgrzymka",       img: img_pi, dir: "right", path: "/pielgrzymka"},
-    {name: "Gra miejska",       img: img_01, dir: "right", path: "/gra"},
+    {name: "Pielgrzymka",       img: img_pi, dir: "right", path: "/pielgrzymka"},
+    //{name: "Gra miejska",       img: img_01, dir: "right", path: "/gra"},
     //{name: "Rajdy",             img: img_ra, dir: "right", path: "/rajd"},
     {name: "Mapa rolkowa",      img: img_ma, dir: "right", path: "/map"},
     {name: "Kontakt",           img: img_ko, dir: "right", path: "/contact"},
