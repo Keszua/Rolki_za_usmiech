@@ -52,7 +52,7 @@ const HomePage = () => {
 
 
             {/* {artList} */}
-            {/* <KaruzelaC/> */}
+            <KaruzelaC/>
         </div>
     );
 }

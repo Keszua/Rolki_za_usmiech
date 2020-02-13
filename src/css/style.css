@@ -132,6 +132,9 @@ html {
 @media (min-width: 800px) {
   .p_body .page {
     margin: 0 2vw 0 2vw;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .top__nav {
     display: none;
