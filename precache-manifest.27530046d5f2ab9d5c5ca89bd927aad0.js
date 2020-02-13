@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "35184aecb8163c4c7cbc5156c271cd6c",
+    "revision": "51447c4bc745fbb76fcf28ac863410b6",
     "url": "/rolkizausmiech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rolkizausmiech/static/css/2.81f13f92.chunk.css"
   },
   {
-    "revision": "e79112d2b23f5ed0bc07",
+    "revision": "f44b45425535139ba186",
     "url": "/rolkizausmiech/static/css/main.1c6b1ca8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rolkizausmiech/static/js/2.43810a4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e79112d2b23f5ed0bc07",
-    "url": "/rolkizausmiech/static/js/main.39dd685a.chunk.js"
+    "revision": "f44b45425535139ba186",
+    "url": "/rolkizausmiech/static/js/main.cf5bdac0.chunk.js"
   },
   {
     "revision": "e0faa4e183a05e4c9375",
@@ -52,10 +52,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rolkizausmiech/static/media/__kolo1-START-01.db0fa027.svg"
   },
   {
-    "revision": "52469d1776b5a22f1a46306c866649b3",
-    "url": "/rolkizausmiech/static/media/__kolo1-WARSZTATY.52469d17.svg"
-  },
-  {
     "revision": "9110c859eb7774a18aab3dd0fd90d25d",
     "url": "/rolkizausmiech/static/media/__kolo1-ZBIORKA.9110c859.svg"
   },
@@ -70,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1f959e17e15158956fc2b599bfd57b8e",
     "url": "/rolkizausmiech/static/media/baner-03.1f959e17.jpg"
+  },
+  {
+    "revision": "57d2ca4f201b1bbb6fd213b7f7671894",
+    "url": "/rolkizausmiech/static/media/kolo1-WARSZTATY.57d2ca4f.svg"
   },
   {
     "revision": "0685a1f929e8bfeec44de4e174a1a2f3",
