@@ -10,7 +10,7 @@ import Animated2 from '../components/Anim-pageYOffset';
 //import img_01 from '../svg/kolo1.svg';
 import img_st from '../svg/__kolo1-START-01.svg';
 import img_na from '../svg/__kolo1-NAUKA.svg';
-import img_wa from '../svg/__kolo1-WARSZTATY.svg';
+import img_wa from '../svg/kolo1-WARSZTATY.svg';
 import img_zb from '../svg/__kolo1-ZBIORKA.svg';
 import img_pi from '../svg/__kolo1-PIELGRZYMKA.svg';
 import img_ma from '../svg/__kolo1-MAPA.svg';
