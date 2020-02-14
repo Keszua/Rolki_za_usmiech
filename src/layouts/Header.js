@@ -13,17 +13,36 @@ import img3 from '../images/baner-03.jpg';
 import Carousel from 'react-bootstrap/Carousel'
 import "bootstrap/dist/css/bootstrap.css";
 
+import imgSta1 from '../images/baner01.png';
+import imgSta2 from '../images/baner02.jpg';
+import imgSta3 from '../images/baner03.jpg';
+
+import imgNau1 from '../images/baner02.jpg';
+import imgWar1 from '../images/baner-03.jpg';
+
+
+const informacje = {
+    start: { },
+    nauka: { },
+    warsztaty: {},
+    zbiorka: { },
+    pielgrzymka: {},
+    mapa: {},
+    kontakt: {},
+    admin: {},
+}
 
 const Header = () => {
     return ( 
         <>
-            <Switch>
+            <KaruzelaBootstrap/>
+            {/* <Switch>
                 <Route path="/" exact   render={() => (  <KaruzelaBootstrap/> )}/>
                 <Route path="/products" render={() => ( <img src={img2} alt="baner" /> )}/>
                 <Route path="/contact"  render={() => ( <img src={img1} alt="baner" /> )}/>
                 <Route path="/admin"    render={() => ( <img src={img3} alt="baner" /> )}/>
                 <Route                  render={() => ( <img src={img3} alt="baner" /> )}/>
-            </Switch>
+            </Switch> */}
         </>
      );
 }
@@ -35,37 +54,35 @@ function KaruzelaBootstrap() {
             <Carousel>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100"
-                    src="http://lorempixel.com/output/cats-q-c-380-200-1.jpg"
-                    alt="First slide"
+                        className="d-block w-100"
+                        src={imgSta1}
+                        alt="First slide"
                     />
-                    <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <Carousel.Caption variant='success'>
+                    <h1 style={{color: 'green'}}> </h1>
+                    {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100"
-                    src="https://placeimg.com/380/200/nature"
-                    alt="Third slide"
+                        className="d-block w-100"
+                        src={imgSta2}
+                        alt="Second slide"
                     />
-
                     <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 style={{color: 'black', textShadow: '0px 0px 3px rgb(255, 255, 255)', textOverflow: 'inherit' }}><b>Trenuj razem z przyjaciółmi</b></h3>
+                    {/* <p style={{color: 'green'}}>Trenuj w grupie.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100"
-                    src="https://placeimg.com/380/200/people"
-                    alt="Third slide"
+                        className="d-block w-100"
+                        src={imgSta3}
+                        alt="Second slide"
                     />
-
                     <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h3 style={{color: 'yellowgreen', textShadow: '1px 1px 6px rgb(0, 0, 0)'}}><b>Jazda rodzinna</b></h3>
+                    {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

@@ -41,7 +41,7 @@ const HomePage = () => {
     return(
         <div className="home">
 
-            Witaj na naszej stronie.
+            <h1>Witaj na naszej stronie.</h1>
 
             Promujemy rolkarstwo i zdrowy stylu życia.
 
