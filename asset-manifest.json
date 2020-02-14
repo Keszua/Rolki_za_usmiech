@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/rolkizausmiech/static/css/main.77eebc99.chunk.css",
-    "main.js": "/rolkizausmiech/static/js/main.7371f233.chunk.js",
-    "main.js.map": "/rolkizausmiech/static/js/main.7371f233.chunk.js.map",
+    "main.js": "/rolkizausmiech/static/js/main.a6041b53.chunk.js",
+    "main.js.map": "/rolkizausmiech/static/js/main.a6041b53.chunk.js.map",
     "runtime-main.js": "/rolkizausmiech/static/js/runtime-main.b73bfdec.js",
     "runtime-main.js.map": "/rolkizausmiech/static/js/runtime-main.b73bfdec.js.map",
     "static/css/2.6f975d4b.chunk.css": "/rolkizausmiech/static/css/2.6f975d4b.chunk.css",
-    "static/js/2.a0b56d61.chunk.js": "/rolkizausmiech/static/js/2.a0b56d61.chunk.js",
-    "static/js/2.a0b56d61.chunk.js.map": "/rolkizausmiech/static/js/2.a0b56d61.chunk.js.map",
+    "static/js/2.937424d5.chunk.js": "/rolkizausmiech/static/js/2.937424d5.chunk.js",
+    "static/js/2.937424d5.chunk.js.map": "/rolkizausmiech/static/js/2.937424d5.chunk.js.map",
     "index.html": "/rolkizausmiech/index.html",
-    "precache-manifest.6d3b217ba168400be8b9ded8366831f1.js": "/rolkizausmiech/precache-manifest.6d3b217ba168400be8b9ded8366831f1.js",
+    "precache-manifest.2efb195230df239bc04909575eed6bab.js": "/rolkizausmiech/precache-manifest.2efb195230df239bc04909575eed6bab.js",
     "service-worker.js": "/rolkizausmiech/service-worker.js",
     "static/css/2.6f975d4b.chunk.css.map": "/rolkizausmiech/static/css/2.6f975d4b.chunk.css.map",
     "static/css/main.77eebc99.chunk.css.map": "/rolkizausmiech/static/css/main.77eebc99.chunk.css.map",
-    "static/js/2.a0b56d61.chunk.js.LICENSE.txt": "/rolkizausmiech/static/js/2.a0b56d61.chunk.js.LICENSE.txt",
+    "static/js/2.937424d5.chunk.js.LICENSE.txt": "/rolkizausmiech/static/js/2.937424d5.chunk.js.LICENSE.txt",
     "static/media/baner-01.jpg": "/rolkizausmiech/static/media/baner-01.0e14ad5c.jpg",
     "static/media/baner-02.jpg": "/rolkizausmiech/static/media/baner-02.e249930e.jpg",
     "static/media/baner-03.jpg": "/rolkizausmiech/static/media/baner-03.1f959e17.jpg",
+    "static/media/baner01.png": "/rolkizausmiech/static/media/baner01.d5b20ebd.png",
+    "static/media/baner02.jpg": "/rolkizausmiech/static/media/baner02.f2946118.jpg",
+    "static/media/baner03.jpg": "/rolkizausmiech/static/media/baner03.0191e878.jpg",
     "static/media/kolo1-KONTAKT.svg": "/rolkizausmiech/static/media/kolo1-KONTAKT.db5ba4fd.svg",
     "static/media/kolo1-MAPA.svg": "/rolkizausmiech/static/media/kolo1-MAPA.4ec3fb02.svg",
     "static/media/kolo1-NAUKA.svg": "/rolkizausmiech/static/media/kolo1-NAUKA.22757aad.svg",
@@ -30,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.b73bfdec.js",
     "static/css/2.6f975d4b.chunk.css",
-    "static/js/2.a0b56d61.chunk.js",
+    "static/js/2.937424d5.chunk.js",
     "static/css/main.77eebc99.chunk.css",
-    "static/js/main.7371f233.chunk.js"
+    "static/js/main.a6041b53.chunk.js"
   ]
 }
