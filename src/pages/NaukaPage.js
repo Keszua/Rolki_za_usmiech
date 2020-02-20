@@ -86,7 +86,7 @@ const NaukaPage = () => {
             </p>
         </Alert> */}
 
-        <Container maxWidth="false" >
+        <Container>
             <Card className={classes.card}>
                 <CardContent>
                     <Typography variant="h5" component="h2">
@@ -117,72 +117,90 @@ const NaukaPage = () => {
                     
                     <List className={classes.root} > 
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak zachować podstawowe zasady bezpieczeństwa
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak jest prawidłowa pozycja
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak nie upaść
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak upadać prawidłowo 
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak zrobić pierwszy krok
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak chodzić na rolkach
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak zacząć jeździć 
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak hamować
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jak skręcać?
                             </ListItemText>
@@ -203,40 +221,50 @@ const NaukaPage = () => {
                         Proszę bardzo:
                     <List className={classes.root} > 
 
-                    <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                    <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 jazda tyłem
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 przeplatanka przodem i tyłem
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 skok bez upadku
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 a może obrót 180stopni podczas jazdy
                             </ListItemText>
                         </ListItem>
                         <Divider variant="inset" component="li" />
 
-                        <ListItem lignItems="flex-start">
-                            <ListItemAvatar> <Avatar alt="Remy Sharp" src={img_01} /> </ListItemAvatar>
+                        <ListItem alignItems="flex-start">
+                            <ListItemAvatar> 
+                                <Avatar alt="Remy Sharp" src={img_01} /> 
+                            </ListItemAvatar>
                             <ListItemText> 
                                 spróbujmy slalomu między kubeczkami
                             </ListItemText>
