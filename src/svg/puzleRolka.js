@@ -1,19 +1,13 @@
 import React from 'react';
 
-
 const SVG = React.forwardRef((props, ref) => (
     
-    // <svg version="1.1" id="Warstwa_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-    //     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-    //     x="0px" y="0px" width="822px" height="566.9px" viewBox="0 0 822 566.9" enable-background="new 0 0 822 566.9"
-    //     xml:space="preserve">
-
     <svg ref={ref} id="svg" className="container" version="1.1"  xmlns="http://www.w3.org/2000/svg" 
-         x="0px" y="0px" width="822px" height="566.9px" viewBox="0 0 822 566.9" enableBackground="new 0 0 822 566.9" >
+        x="0px" y="0px" width="822px" height="566.9px" viewBox="0 0 822 566.9" enableBackground="new 0 0 822 566.9" >
 
         <g id="rolka">
             
-            <image overflow="visible"    width="408" height="272" id="rolka17" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAERCAYAAABGhLFFAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+            <image overflow="visible"    width="408" height="272" id="puzel17" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAERCAYAAABGhLFFAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAVo9JREFUeNrsvQm8ZFV177/23mes
         +dYd+t4ebo/Q0DI0oAYiguIAwWgktBpHTKJ5H5++JOblkfc0viSPxJdgnBLz9K/RxEyYpBEfcYwE
         ROWPwSBDI9Bwgabh9nT7jjWcqjPs/dauW900TQ93qLp16tRafDanqm71qTPss7/7t/baazMgS7x9
@@ -406,7 +400,7 @@ const SVG = React.forwardRef((props, ref) => (
         Aiq+CcYB43K53imQfkcdTLzy+D91J8AAtkYsflR7u98AAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 588.5039 76.584)">
             </image>
             
-                <image overflow="visible"    width="298" height="383" id="rolka16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAGBCAYAAADc/4xFAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="298" height="383" id="puzel16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAGBCAYAAADc/4xFAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAWJpJREFUeNrsvQucZFV177/3eZ96
         9KOmu6dnBoYZGRhARkGUgGC4QY3ERG8044voVZOrYjS+xRtuTG4+Rm6C+YQEJeZGk78GXyCC8UEk
         KIiCIIIMDMwwTM+rZ/rdXV2PU+e99/6vfap76Bl6ZvrdVafW0kPVOVVTXbXP3t/zW+usvbZC0NDQ
@@ -808,7 +802,7 @@ const SVG = React.forwardRef((props, ref) => (
         EtayqfC0MFkmAKUt46buENusCl23wxdfeAddUw/oFwEGAG38UdMcoFuQAAAAAElFTkSuQmCC" transform="matrix(0.48 0 0 0.48 24.0229 81.144)">
             </image>
             
-                <image overflow="visible"    width="271" height="398" id="rolka15" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGQCAYAAACJeFTzAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="271" height="398" id="puzel15" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGQCAYAAACJeFTzAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAToFJREFUeNrsvQ2cW8V97z0z50VH
         0tGudr22ZVjA1Ao4jVsvwVC3+D7h9tLifprnlvvAbV5orklj8gJJIA2YEtt5I5BiO7dpCU0TSMGl
         ENpLWnLLfWoCLaRZUtKYsLRO4yRrWIxftPbaq5WOpPM6c+d/tIvX76tdSSvp/H8gS9qXs0dnZr7n
@@ -1165,7 +1159,7 @@ const SVG = React.forwardRef((props, ref) => (
         CoVCoVAoFKrO+r8CDAD4K6XQGrHTCgAAAABJRU5ErkJggg==" transform="matrix(0.48 0 0 0.48 551.3037 334.8242)">
             </image>
             
-                <image overflow="visible"    width="398" height="262" id="rolka14" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEHCAYAAACA3BA3AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="398" height="262" id="puzel14" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEHCAYAAACA3BA3AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAg/pJREFUeNrsvQucHEd97/uv6u55
         7/uhlbSy1vbalm1Zkm35hQUIbECAE5yYYAhJTJLDJbmc5HI/wfaHmHxycwzkg31y4IRzTi7JJznh
         5ORCbvAJnxuSQBKCk5hgwMQyjyBAtmVbNitZj33MzrO76lZ1V3dXVffMzu7OrPZRJbdnpuexM93V
@@ -1762,7 +1756,7 @@ const SVG = React.forwardRef((props, ref) => (
         AQT233TjGoQBCoVCoVAoFGr8+v8CDADcFrX/EbHdywAAAABJRU5ErkJggg==" transform="matrix(0.48 0 0 0.48 408.0239 377.5449)">
             </image>
             
-                <image overflow="visible"    width="262" height="398" id="rolka13" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="262" height="398" id="puzel13" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAeNZJREFUeNrsvQuUJFd55/ndG5GR
         z3p2dXV19UMtqSVajdQSQpIFCCTAEsLYBo+NGWzvDOOzeIf1axkj+YwHmbV5zNiNj8+ud+bMrPdh
         n9lZbGzGDGZ5CWMQL9HojWi1RCOaVneruru6uroqKyszHvfu992IyIyIjKxXZlZlVt4LV5GZlR2Z
@@ -2309,7 +2303,7 @@ const SVG = React.forwardRef((props, ref) => (
         NxUdq7++5twroKcBBAKBukX/L8AAO5+TJQNCzEkAAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 330.0234 355.2246)">
             </image>
             
-                <image overflow="visible"    width="403" height="262" id="rolka12" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEJCAYAAAC3yAEAAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="403" height="262" id="puzel12" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEJCAYAAAC3yAEAAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAaNlJREFUeNrsvQt8ZEd951tV59Gn
         H5J6ND0zPXbbFlgJCkzwEA947jLBzgeIfTdOQoKvceJNvOCwhBCSbAITwDjEGEM8JuERCPHyiiGw
         hDU3kEvux7k4e83GNxmSMchhnJWzIshG4+mZaY1aUj/Oox63/nVOdx9pNBo9WlK3Tv39KXerWzrT
@@ -2784,7 +2778,7 @@ const SVG = React.forwardRef((props, ref) => (
         uznk/3RYcPev0icKhUKhUCgUCoVCoVAoFGq79f8CDACdQVUhhcEUtQAAAABJRU5ErkJggg==" transform="matrix(0.48 0 0 0.48 184.1035 398.1846)">
             </image>
             
-                <image overflow="visible"    width="404" height="262" id="rolka11" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEHCAYAAACNwmBwAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="404" height="262" id="puzel11" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEHCAYAAACNwmBwAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAWh9JREFUeNrsnQucHFWd7//1rn5O
         zyNJJ5nAJBkgQjSDhIeXrMYFluxH9i5eooIsG0RcF9HFB8GLEF8geyG4qCurCApRENyLV9h1FXZx
         jRoUMcAEIwwwgUkymXQm8+jpru6u5zn3/Ktnkskwk3l1z3R3nR+WPTPpqamuOnW+9Tv///kfAbi4
@@ -3193,7 +3187,7 @@ const SVG = React.forwardRef((props, ref) => (
         pVKwqFQvASVkksUzHNRHSqVSLaW/BBgAQeqR76RneCwAAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 508.3438 256.5845)">
             </image>
             
-                <image overflow="visible"    width="262" height="398" id="rolka10" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="262" height="398" id="puzel10" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAkvBJREFUeNrsvQl8XFd5N/zcde4s
         kkb7eB8ncaw4m0ICcUIWJyxJgJJAKUvZ0re8hJb2hR8lpH2/9it80Da0pS3fW1qgQEnZEgiQ0ABZ
         ibMRO4kTZVfsOJZ32dpGmu3O3O19/mdm5JE0siRbsrWcJ7+TGY1n7ty595z/+T87kRQpUqQcRRR5
@@ -3857,7 +3851,7 @@ const SVG = React.forwardRef((props, ref) => (
         1CfX3h3+xclfhQzTsKEwF0h0OyEhxjQICQkJLSH9fwEGAHfkRQTBDTJZAAAAAElFTkSuQmCC" transform="matrix(0.48 0 0 0.48 430.3438 234.2646)">
             </image>
             
-                <image overflow="visible"    width="398" height="262" id="rolka09" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEJCAYAAAC61nFHAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="398" height="262" id="puzel09" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAEJCAYAAAC61nFHAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAtO1JREFUeNrsvWlwXNeVJnjeljuQ
         CSCxEBuxEQBJkARJiIQoUpItlSXbsiyXVZKXclVPubpcFf2jY6IjOubHRMxMRP+b6Y75NdXd4Zny
         1FS3u12qsi3LtvbdEiVu4L4BJIh9SQC5L2+dc06+BAESJLYEN7wjXT4gkevL++53v7N8B8Axxxxz
@@ -4674,7 +4668,7 @@ const SVG = React.forwardRef((props, ref) => (
         RIkSJUqUKLlz+f8FGACxHD+uTqKizwAAAABJRU5ErkJggg==" transform="matrix(0.48 0 0 0.48 287.0635 277.2246)">
             </image>
             
-                <image overflow="visible"    width="262" height="398" id="rolka08" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="262" height="398" id="puzel08" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQkAAAGQCAYAAAC9AZXvAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAmhBJREFUeNrsvQmcXEd173+q7tLL
         9PSsGo1G0liWxrIsvMjGNrYRtjGL2ZJAYkPII2EJgSSE5OXD8kKAR5ywPJb3f8mfJIQAAUJ4bCaA
         DcEY29h4RTayLMuyJEvyaCSNWrNPTy93r3dO3dszPZs0S8+oe6aOfXR7m+7bt6u+93dOVZ3LQFnN
@@ -5370,7 +5364,7 @@ const SVG = React.forwardRef((props, ref) => (
         dgPfYwIxBp9zLlmsOZEBQjaykY1sZCMb2cjGdhr/vwADAL6sScYszx1gAAAAAElFTkSuQmCC" transform="matrix(0.48 0 0 0.48 209.0635 254.9043)">
             </image>
             
-                <image overflow="visible"    width="403" height="262" id="rolka07" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEJCAYAAAC3yAEAAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="403" height="262" id="puzel07" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAAEJCAYAAAC3yAEAAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAZtBJREFUeNrsvQmcXFWZ//2cc5e6
         tXR1d6U7KZrYRswgZhiMDkZmjMs4fhT9u7y+wyiLLCKKuIz+RZl3RhEdXEYWFwQZEAmgLCIzKo7K
         yKIiOgoBQwxNCCFpOkmn0l1dXV3bXc857zm3qrqrqpf03lV9z8PnUNVV3TdV9557vuf3PM95DgJp
@@ -5836,7 +5830,7 @@ const SVG = React.forwardRef((props, ref) => (
         KBQKhUKhUCgUCoVCoVAoFArVd/p/AQYAsVUBoTHqkAcAAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 63.1431 297.8643)">
             </image>
             
-                <image overflow="visible"    width="404" height="262" id="rolka06" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAEJCAYAAACzPdE9AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="404" height="262" id="puzel06" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAEJCAYAAACzPdE9AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAZsdJREFUeNrsvQmAY1WZ9/3c/Wap
         VGrrTi/QYe0CxS72AtFuFGxQx8bRUdQXu0dlcJvBbz5EERUcNwScF+cbBUYZGxVFX+YVlKVxo3Gj
         GwQKZSmWptN7qruWVGW5N3f9znOSVKWqUlVJZa+cB69JpatuknvPOb/zP89yOGDGjFlL2OduPDVI
@@ -6302,7 +6296,7 @@ const SVG = React.forwardRef((props, ref) => (
         SCQSiUQikUikBtf/BRgA22/7YzcWPsEAAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 387.3838 155.7842)">
             </image>
             
-                <image overflow="visible"    width="271" height="398" id="rolka05" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGQCAYAAACJeFTzAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="271" height="398" id="puzel05" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGQCAYAAACJeFTzAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAgyhJREFUeNrsvXl8lFW297tqrsyV
         CQKEpJgDCAREZJ4cQEVBRUB70Pseu221z+lz3vcPfc+979Hzxz33dN/33J60W3qwQVsFRRkUZJ6R
         gIBhEMIc5gBJyJxKjXf9dj0VKqGS1Jyq1F589qeSInny1PPs/X1+a+211yaSJk2aNGnSpEnrLlPJ
@@ -6896,7 +6890,7 @@ const SVG = React.forwardRef((props, ref) => (
         rkJggg==" transform="matrix(0.48 0 0 0.48 305.0635 133.4644)">
             </image>
             
-                <image overflow="visible"    width="409" height="262" id="rolka04" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAEJCAYAAACt9OGOAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="409" height="262" id="puzel04" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZoAAAEJCAYAAACt9OGOAAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAd7NJREFUeNrsnQt8VNW1/9d5zPuR
         yYsECBAkYBCUCKiotEWLlbZW8S+3WrVqq/333mqr/Svaqq23VdtbsbWttdprH1rrowqKtQ+w3qut
         oGhRgkYNECBAgAl5TeZ55jz/e+3JTCYhj8lkZjKT2auf02RiOJmz55z93b+11l4LgBkzZsyYMWPG
@@ -7438,7 +7432,7 @@ const SVG = React.forwardRef((props, ref) => (
         IpFIJBKJRCJVkf5fgAEA76765vJ+F90AAAAASUVORK5CYII=" transform="matrix(0.48 0 0 0.48 163.4634 176.4243)">
             </image>
             
-                <image overflow="visible"    width="271" height="398" id="rolka03" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGSCAYAAADEsPX4AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="271" height="398" id="puzel03" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAGSCAYAAADEsPX4AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAVbpJREFUeNrsvQmcXGWV/32eu9Wt
         qlvd1VtSJB0SoJGo0TQSJUrmIyozxhkd4DX/EUQGEBAYREATGJaoDCATgoPKMOigQkCEv294xRFH
         cJs4hhE1DM1MxAAd6CSdpNLppbpru/vzPudWd9PZe6mqruX8/Fy70yS3b937PN/7O+c8CwCJRCKR
@@ -7828,7 +7822,7 @@ const SVG = React.forwardRef((props, ref) => (
         YII=" transform="matrix(0.48 0 0 0.48 409.7036 12.5039)">
             </image>
             
-                <image overflow="visible"    width="403" height="262" id="rolka02" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAEJCAYAAACzPdE9AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="403" height="262" id="puzel02" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAEJCAYAAACzPdE9AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAbglJREFUeNrsnQlgXWWV+M9d3568
         LE1f07RNaYAiHQgSoWpHirJUwb8wdhRlFHR0UHHBGQqj0FGsgFr8o/51ZhiUZQaFcYrggMqmIrRQ
         oECqLAW6JGmWl/0lecvd7/+c7yUlDdnz3stbvgO3L3lNb9699/vO7zvrB8CFCxcuXLhw4cKFCxcu
@@ -8327,7 +8321,7 @@ const SVG = React.forwardRef((props, ref) => (
         AAAAAElFTkSuQmCC" transform="matrix(0.48 0 0 0.48 263.7837 55.4639)">
             </image>
             
-                <image overflow="visible"    width="280" height="398" id="rolka01" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARsAAAGQCAYAAACeWsQ6AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
+                <image overflow="visible"    width="280" height="398" id="puzel01" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARsAAAGQCAYAAACeWsQ6AAAACXBIWXMAABcRAAAXEQHKJvM/AAAA
         GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAW41JREFUeNrsvQmcXFWZ93+We2/d
         Wrq6ulLpVGJoYugBjIwGRQYd3BgXRkff8R0GRVAEFWVc3vn/J2E+KshAABVwRlRUROVlHFwz6ozz
         9+8yg8ogYNhi3hhiCCE0nU6l011dXV3L3c4573ludYfO3t2pqq7l+fG51JLqW7fuPed7n+Wc5xCC

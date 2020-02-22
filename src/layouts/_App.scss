@@ -5,6 +5,7 @@
 //Mój telefon ma niby: 2340x1080  a w przeglądarce: 775x393
 // U Norberta  831x412
 
+/*---------------------------- plik App.css ---------------------------------*/
 
 .main {
     display: flex;
@@ -54,7 +55,7 @@
     }
 
     &__header {
-       margin-bottom: 2vh;
+      margin-bottom: 2vh;
       //display: block;
       display: flex;
       flex-direction: column;
@@ -185,3 +186,5 @@
   }
 }
 */
+
+/*------------------------- koniec pliku App.css ----------------------------*/

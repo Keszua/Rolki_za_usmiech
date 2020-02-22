@@ -11,6 +11,7 @@ html {
   font-size: 20px;
 }
 
+/*---------------------------- plik App.css ---------------------------------*/
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,6 +242,7 @@ html {
   }
 }
 */
+/*------------------------- koniec pliku App.css ----------------------------*/
 /* Plik Navigation.js */
 .navigation .nav-link {
   padding: 0;
@@ -379,7 +381,7 @@ html {
   }
 }
 
-/* Plik Header.js */
+/*---------------------------- plik Header.js -------------------------------*/
 header {
   position: relative;
   overflow: hidden;
@@ -395,6 +397,7 @@ header img {
   min-height: 100%;
 }
 
+/*------------------------ koniec pliku Header.js ---------------------------*/
 /* Plik Fotter.js */
 footer {
   background-color: #36b65c;
@@ -413,12 +416,13 @@ footer p {
   font-size: 14px;
 }
 
-/* plik HomePage.scss*/
+/*-------------------------- plik HomePage.scss -----------------------------*/
 .home__puzle {
   width: 100%;
 }
 
-/* plik _ContactPage.scss */
+/*----------------------- koniec pliku HomePage.scss ------------------------*/
+/*------------------------ plik _ContactPage.scss ---------------------------*/
 .contact textarea {
   font-size: 16px;
   width: 80%;
@@ -446,7 +450,8 @@ footer p {
   background-color: black;
 }
 
-/* plik _ProductListPage.scss */
+/*-------------------- koniec pliku _ContactPage.scss -----------------------*/
+/*---------------------- plik _ProductListPage.scss -------------------------*/
 .products h2 {
   margin-bottom: 20px;
 }
@@ -469,4 +474,6 @@ footer p {
   text-decoration: underline;
   color: black;
 }
+
+/*------------------ koniec pliku _ProductListPage.scss ---------------------*/
 /*# sourceMappingURL=style.css.map */

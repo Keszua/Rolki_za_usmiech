@@ -11,7 +11,11 @@ import { Switch, Route  } from 'react-router-dom';
 //karuzela ReactBootstrap
 //import Container from 'react-bootstrap/Container'
 import Carousel from 'react-bootstrap/Carousel'
-import "bootstrap/dist/css/bootstrap.css";
+//import "bootstrap/dist/css/bootstrap.css";
+
+import Puzle from '../components/Puzle.js';
+import PuzleRolka from '../components/PuzleRolka.js';
+
 
 import imgNeu1 from '../images/baner01.png';
 import imgNeu2 from '../images/baner02.png';
@@ -79,10 +83,12 @@ const Header = () => {
     return ( 
         <>
             <Switch>
-                <Route path="/" exact      render={() => ( <KaruzelaBootstrap item={informacje.start}/> )}/>
+                {/* <Route path="/" exact      render={() => ( <KaruzelaBootstrap item={informacje.start}/> )}/> */}
+                <Route path="/" exact      render={() => ( <Puzle grafika='napis'/> )}/>
                 <Route path="/nauka"       render={() => ( <KaruzelaBootstrap item={informacje.nauka}/> )}/>
                 <Route path="/warsztaty"   render={() => ( <KaruzelaBootstrap item={informacje.warsztaty}/> )}/>
-                <Route path="/zbiorka"     render={() => ( <KaruzelaBootstrap item={informacje.zbiorka}/> )}/>
+                {/* <Route path="/zbiorka"     render={() => ( <KaruzelaBootstrap item={informacje.zbiorka}/> )}/> */}
+                <Route path="/zbiorka"     render={() => ( <PuzleRolka /> )}/>
                 <Route path="/pielgrzymka" render={() => ( <KaruzelaBootstrap item={informacje.pielgrzymka}/> )}/>
                 <Route path="/gra"         render={() => ( <KaruzelaBootstrap item={informacje.gra}/> )}/>
                 <Route path="/rajd"        render={() => ( <KaruzelaBootstrap item={informacje.rajd}/> )}/>
