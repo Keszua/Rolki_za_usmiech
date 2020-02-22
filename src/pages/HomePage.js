@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
+
+import { TweenMax, TimelineMax, Power3, Elastic } from 'gsap';
+import { Tween } from 'react-gsap';
 
 //import Article from '../components/Article'
-import 'pure-react-carousel/dist/react-carousel.es.css';
 
 //kolejna karuzela z: https://github.com/bitriddler/react-items-carousel
-import ItemsCarousel from 'react-items-carousel';
+//import ItemsCarousel from 'react-items-carousel';
+//import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
-//import { Button, Icon, Col } from 'antd';
+import Puzle01 from '../svg/puzle01.js';
+import { match } from 'minimatch';
 
 
 //http://react-responsive-carousel.js.org/storybook/?selectedKind=Carousel&selectedStory=PropTypes&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel
@@ -44,11 +48,16 @@ const HomePage = () => {
 
             <br/>Promujemy rolkarstwo i zdrowy stylu życia.
 
-            <br/>Zapoznaj się co do tej poty udało  nam się zorganizować. 
+            <br/>Zapoznaj się co do tej pory udało  nam się zorganizować. 
             <br/>Na pewno znajdziesz coś dla siebie i rodziny.
 
             <br/>Akcja ta, nie powstała by, bez nieustannej pomocy mojej kochanej żony oraz licznej grupy znajomych  i przyjaciół.
 
+            <div className="home__puzle">
+                {/* <img src={img_puzle} alt="puzle"/> */}
+                <Puzle/>
+
+            </div>
 
 
             {/* {artList} */}
@@ -56,6 +65,83 @@ const HomePage = () => {
         </div>
     );
 }
+
+
+
+
+
+
+class Puzle extends Component {
+    state = { 
+        myElement: [],
+        tl: null,
+        //puzle: [], 
+    }
+
+
+    searchElement() {
+
+    }
+
+
+    efekt1() {
+        //Wyszukanie elementów w pliku SVG
+        const puzle = []; 
+        let nr = 1;
+        let szukanyPuzel = 'rolka01';
+        while(this.myElement.getElementById(szukanyPuzel) && nr<25) {
+            puzle.push(this.myElement.getElementById(szukanyPuzel));
+            nr++;    
+            szukanyPuzel = nr<10 ? 'rolka0' + nr : 'rolka' + nr;
+        }
+        
+        const easeEfekt = [Power3.easeOut,  Power3.easeI, Elastic.easeInOut, Elastic.easeOut ]
+        
+        let propertis = [];
+        for(let i=0; i<nr; i++) {
+            propertis.push({
+                time: Math.random() * 2 + 2,
+                efect: {
+                    x: Math.random() * 500 ,
+                    y: Math.random() * 500 ,
+                    rotation: Math.random() * 90,
+                    ease: easeEfekt[ Math.floor(Math.random() * easeEfekt.length)],
+                    delay: Math.random() * 20,
+                    //delay: i,
+                },
+            })
+        }
+            
+        for(let i=0; i < puzle.length; i++) {
+            TweenMax.from(puzle[i], propertis[i].time, propertis[i].efect);
+        }
+        
+        //const el = this.myElement.getElementById('rolka08');
+        //TweenMax.from(el, 5, {x:1000, ease: Elastic.easeOut, zIndex: -2, })
+    }
+
+    componentDidMount() {
+        this.efekt1();
+    }
+    
+    render() { 
+        
+        return (
+            <> 
+                <Puzle01 ref={el => {this.myElement = el}} />
+                {/* <Tween
+                    to={{ x: 200, }} duration={2} 
+                    ease="Back.easeOut"
+                    ref={ref => this.tween = ref}
+                >
+                    <div>Nauka jazdy</div>
+                </Tween> */}
+            </>
+         );
+    }
+}
+
+
 
 // const Wrapper = styled.div`
 //   padding: 0 20px;

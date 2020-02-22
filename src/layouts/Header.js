@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route  } from 'react-router-dom';
 // import img1 from '../images/baner-01.jpg';
 // import img2 from '../images/baner-02.jpg';
-import img3 from '../images/baner-03.jpg';
+//import img3 from '../images/baner-03.jpg';
 
 //kolejna karuzela z: https://github.com/bitriddler/react-items-carousel
 //import ItemsCarousel from 'react-items-carousel';
@@ -14,14 +14,14 @@ import Carousel from 'react-bootstrap/Carousel'
 import "bootstrap/dist/css/bootstrap.css";
 
 import imgNeu1 from '../images/baner01.png';
-import imgNeu2 from '../images/baner02.jpg';
-import imgNeu3 from '../images/baner03.jpg';
+import imgNeu2 from '../images/baner02.png';
+import imgNeu3 from '../images/baner03.png';
 
 import imgNau1 from '../images/baner11.jpg';
 import imgNau2 from '../images/baner12.jpg';
 import imgNau3 from '../images/baner01.png';
 
-import imgWar1 from '../images/baner02.jpg';
+import imgWar1 from '../images/baner02.png';
 
 
 const informacje = {
@@ -50,6 +50,16 @@ const informacje = {
         {id:2, img:imgNeu2, txt:""},
         {id:3, img:imgNeu3, txt:""},
     ],
+    rajd: [
+        {id:1, img:imgNeu1, txt:""}, 
+        {id:2, img:imgNeu2, txt:""},
+        {id:3, img:imgNeu3, txt:""},
+    ],
+    gra: [
+        {id:1, img:imgNeu1, txt:""}, 
+        {id:2, img:imgNeu2, txt:""},
+        {id:3, img:imgNeu3, txt:""},
+    ],
     mapa: [
         {id:1, img:imgNeu1, txt:""}, 
         {id:2, img:imgNeu2, txt:""},
@@ -60,19 +70,26 @@ const informacje = {
         {id:2, img:imgNeu2, txt:""},
         {id:3, img:imgNeu3, txt:""},
     ],
-    admin: {},
+    admin: [
+        {id:1, img:imgNeu1, txt:""}, 
+    ],
 }
 
 const Header = () => {
     return ( 
         <>
-            {/* <KaruzelaBootstrap item={informacje.start}/> */}
             <Switch>
-                <Route path="/" exact    render={() => ( <KaruzelaBootstrap item={informacje.start}/> )}/>
-                <Route path="/nauka"     render={() => ( <KaruzelaBootstrap item={informacje.nauka}/> )}/>
-                <Route path="/warsztaty" render={() => ( <KaruzelaBootstrap item={informacje.nauka}/> )}/>
-                <Route path="/admin"     render={() => ( <KaruzelaBootstrap item={informacje.nauka}/> )}/>
-                <Route                   render={() => (   <img src={img3} alt="baner" /> )}/>
+                <Route path="/" exact      render={() => ( <KaruzelaBootstrap item={informacje.start}/> )}/>
+                <Route path="/nauka"       render={() => ( <KaruzelaBootstrap item={informacje.nauka}/> )}/>
+                <Route path="/warsztaty"   render={() => ( <KaruzelaBootstrap item={informacje.warsztaty}/> )}/>
+                <Route path="/zbiorka"     render={() => ( <KaruzelaBootstrap item={informacje.zbiorka}/> )}/>
+                <Route path="/pielgrzymka" render={() => ( <KaruzelaBootstrap item={informacje.pielgrzymka}/> )}/>
+                <Route path="/gra"         render={() => ( <KaruzelaBootstrap item={informacje.gra}/> )}/>
+                <Route path="/rajd"        render={() => ( <KaruzelaBootstrap item={informacje.rajd}/> )}/>
+                <Route path="/map"         render={() => ( <KaruzelaBootstrap item={informacje.mapa}/> )}/>
+                <Route path="/contact"     render={() => ( <KaruzelaBootstrap item={informacje.kontakt}/> )}/>
+                <Route path="/admin"       render={() => ( <KaruzelaBootstrap item={informacje.admin}/> )}/>
+                <Route                     render={() => ( <img className="d-block w-100" src={imgNeu1} alt="baner" /> )}/>
             </Switch>
         </>
      );

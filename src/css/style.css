@@ -8,6 +8,7 @@
 
 html {
   font-family: 'Arial';
+  font-size: 20px;
 }
 
 .main {
@@ -127,6 +128,7 @@ html {
 
 .page {
   min-height: 130vh;
+  padding: 10px;
 }
 
 @media (min-width: 800px) {
@@ -393,6 +395,29 @@ header img {
   min-height: 100%;
 }
 
+/* Plik Fotter.js */
+footer {
+  background-color: #36b65c;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+footer span {
+  color: #124615;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* plik HomePage.scss*/
+.home__puzle {
+  width: 100%;
+}
+
 /* plik _ContactPage.scss */
 .contact textarea {
   font-size: 16px;
@@ -443,23 +468,5 @@ header img {
 .products a:hover {
   text-decoration: underline;
   color: black;
-}
-
-/* Plik Fotter.js */
-footer {
-  background-color: #36b65c;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  height: 60px;
-}
-
-footer span {
-  color: #124615;
-}
-
-footer p {
-  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
