@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rolkizausmiech/static/css/main.766492e0.chunk.css",
-    "main.js": "/rolkizausmiech/static/js/main.cd792984.chunk.js",
-    "main.js.map": "/rolkizausmiech/static/js/main.cd792984.chunk.js.map",
+    "main.js": "/rolkizausmiech/static/js/main.b711d80a.chunk.js",
+    "main.js.map": "/rolkizausmiech/static/js/main.b711d80a.chunk.js.map",
     "runtime-main.js": "/rolkizausmiech/static/js/runtime-main.b73bfdec.js",
     "runtime-main.js.map": "/rolkizausmiech/static/js/runtime-main.b73bfdec.js.map",
     "static/css/2.67123b20.chunk.css": "/rolkizausmiech/static/css/2.67123b20.chunk.css",
     "static/js/2.c6da3df1.chunk.js": "/rolkizausmiech/static/js/2.c6da3df1.chunk.js",
     "static/js/2.c6da3df1.chunk.js.map": "/rolkizausmiech/static/js/2.c6da3df1.chunk.js.map",
     "index.html": "/rolkizausmiech/index.html",
-    "precache-manifest.bee7b9d03f1eca4792af133453f770a3.js": "/rolkizausmiech/precache-manifest.bee7b9d03f1eca4792af133453f770a3.js",
+    "precache-manifest.c9b75db4cac79aea4754a8cb2a257374.js": "/rolkizausmiech/precache-manifest.c9b75db4cac79aea4754a8cb2a257374.js",
     "service-worker.js": "/rolkizausmiech/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/rolkizausmiech/static/css/2.67123b20.chunk.css.map",
     "static/css/main.766492e0.chunk.css.map": "/rolkizausmiech/static/css/main.766492e0.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.67123b20.chunk.css",
     "static/js/2.c6da3df1.chunk.js",
     "static/css/main.766492e0.chunk.css",
-    "static/js/main.cd792984.chunk.js"
+    "static/js/main.b711d80a.chunk.js"
   ]
 }

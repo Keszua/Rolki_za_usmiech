@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41b0badd08e87f7595f7ed1acc1f039d",
+    "revision": "676aac4f73e20e998d612e700be84f97",
     "url": "/rolkizausmiech/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rolkizausmiech/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "4e2e41718544322bc1fc",
+    "revision": "9ece36bb460020a4b9f9",
     "url": "/rolkizausmiech/static/css/main.766492e0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rolkizausmiech/static/js/2.c6da3df1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4e2e41718544322bc1fc",
-    "url": "/rolkizausmiech/static/js/main.cd792984.chunk.js"
+    "revision": "9ece36bb460020a4b9f9",
+    "url": "/rolkizausmiech/static/js/main.b711d80a.chunk.js"
   },
   {
     "revision": "e0faa4e183a05e4c9375",
