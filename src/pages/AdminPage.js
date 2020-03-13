@@ -19,7 +19,7 @@ class AdminPageSorce extends Component {
     state = { 
         windowSizeW: window.innerWidth,
         windowSizeH: window.innerHeight,
-        kod: 1234567890123,
+        kod: 12345678901,
         versja: "-",
     }
 
@@ -34,20 +34,16 @@ class AdminPageSorce extends Component {
     }
 
     handleGenerateNumber = (props) => {
-
         let versja;
         // let arr = Array.from(this.state.kod.toString())
         //let txt = this.state.kod.toString()
         let txt = props.toString()
-        //console.log("propsy", props)
 
-        //txt[]
-
-        if(txt.length<14) {
+        if(txt.length<12) {
             versja = "-"
-        } else if(txt.length === 14) {
+        } else if(txt.length === 12) {
             
-            let odjemna = Number(txt[11])
+            let odjemna = Number(txt[10])
             let v1 = Number(txt[3])
             if(odjemna<=v1) {
                 v1 = v1 - odjemna
@@ -64,7 +60,7 @@ class AdminPageSorce extends Component {
                 v2 = v2 - odjemna
             }
 
-            let v3 = Number(txt[9])
+            let v3 = Number(txt[8])
             if(odjemna<=v3) {
                 v3 -= odjemna
             } else {
